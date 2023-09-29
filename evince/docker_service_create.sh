@@ -5,6 +5,7 @@ docker service rm evince
 docker service create \
   --name evince \
   --replicas 1 \
+  --publish mode=host,target=1323,published=1323 \
   --network net1 \
   --restart-condition none \
   --endpoint-mode dnsrr \
