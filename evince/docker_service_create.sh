@@ -12,4 +12,4 @@ docker service create \
   --endpoint-mode dnsrr \
   archlinux:latest \
   /bin/bash -c \
-  "curl -s https://raw.githubusercontent.com/notional-labs/nmisc/1-add-evince-service/evince/run.sh > ~/run.sh && /bin/bash ~/run.sh"
+  "curl -s https://raw.githubusercontent.com/notional-labs/nmisc/main/evince/run.sh > ~/run.sh && /bin/bash ~/run.sh"

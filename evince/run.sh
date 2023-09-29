@@ -12,7 +12,7 @@ make build
 
 
 # download config
-curl -Ls https://raw.githubusercontent.com/notional-labs/nmisc/1-add-evince-service/evince/conf.yaml > $HOME/conf.yaml
+curl -Ls https://raw.githubusercontent.com/notional-labs/nmisc/main/evince/conf.yaml > $HOME/conf.yaml
 
 # run
 cd $HOME
