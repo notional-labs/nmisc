@@ -7,6 +7,7 @@ docker service create \
   --replicas 1 \
   --network net1 \
   --restart-condition none \
+  --endpoint-mode dnsrr \
   archlinux:latest \
   /bin/bash -c \
   "curl -s https://raw.githubusercontent.com/notional-labs/nmisc/1-add-evince-service/evince/run.sh > ~/run.sh && /bin/bash ~/run.sh"
