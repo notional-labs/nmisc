@@ -7,6 +7,7 @@ docker service create \
   --replicas 1 \
   --publish mode=host,target=1323,published=1323 \
   --network net1 \
+  --constraint 'node.hostname==nmisc1' \
   --restart-condition none \
   --endpoint-mode dnsrr \
   archlinux:latest \
