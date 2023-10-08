@@ -25,7 +25,7 @@ wget -O - "http://tasks.web_config/config/lava.keyring-file.tar.gz" |tar -xzf - 
 # start_rpcprovider.sh script
 cat <<EOT > $HOME/start_rpcprovider.sh
 cd $HOME/.lava
-/root/go/bin/lavad rpcprovider osmosis-testnet-provider.yml --from notional --geolocation 2 --chain-id lava-testnet-2 --log_level debug --node https://public-rpc-testnet2.lavanet.xyz:443/rpc/
+echo "notional" | /root/go/bin/lavad rpcprovider osmosis-testnet-provider.yml --from notional --geolocation 2 --chain-id lava-testnet-2 --log_level debug --node https://public-rpc-testnet2.lavanet.xyz:443/rpc/
 EOT
 
 # run
