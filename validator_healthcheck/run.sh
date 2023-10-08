@@ -7,7 +7,10 @@ git clone --single-branch --branch main https://github.com/notional-labs/nmisc
 ########################################################################################################################
 # validator_healthcheck api
 cd $HOME/nmisc/validator_healthcheck/api
-pip install -r requirements.txt
+
+# add --break-system-packages to fix error: externally-managed-environment
+pip install -r requirements.txt --break-system-packages
+
 screen -S api -dm /usr/sbin/python app.py
 
 ########################################################################################################################
