@@ -2,11 +2,6 @@ pacman -Syu --noconfirm
 pacman -S --noconfirm go git base-devel wget pigz jq cronie screen unzip logrotate
 
 ########################################################################################################################
-# SSL (fullchain.pem and privkey.pem files)
-wget "http://tasks.web_config/config/notional.ventures.fullchain.pem" -O /etc/nginx/fullchain.pem
-wget "http://tasks.web_config/config/notional.ventures.privkey.pem" -O /etc/nginx/privkey.pem
-
-########################################################################################################################
 # install lava
 cd $HOME
 git clone https://github.com/lavanet/lava
