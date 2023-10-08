@@ -24,7 +24,6 @@ echo "notional" | /root/go/bin/lavad rpcprovider osmosis-testnet-provider.yml --
 EOT
 
 # run
-cd $HOME/.lava
 screen -S rpcprovider -dm /bin/bash $HOME/start_rpcprovider.sh
 
 ########################################################################################################################
