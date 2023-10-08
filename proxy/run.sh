@@ -8,7 +8,7 @@ wget "http://tasks.web_config/config/notional.ventures.privkey.pem" -O /etc/ngin
 
 ########################################################################################################################
 # nginx
-curl -s "https://raw.githubusercontent.com/notional-labs/nmisc/main/proxy/nginx.conf" > $HOME/nginx.conf.template
+curl -s "https://raw.githubusercontent.com/notional-labs/nmisc/main/proxy/nginx.conf" > /etc/nginx/nginx.conf
 
 # run nginx with screen to avoid log to docker
 screen -S nginx -dm /usr/sbin/nginx -g "daemon off;"
