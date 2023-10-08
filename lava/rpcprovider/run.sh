@@ -16,14 +16,17 @@ make install
 
 $HOME/go/bin/lavad config chain-id lava-testnet-2
 
+# create osmosis-testnet-provider.yml
+wget "http://tasks.web_config/config/lava.osmosis-testnet-provider.yml" -O $HOME/.lava/osmosis-testnet-provider.yml
+
+# keyring-file
+wget -O - "http://tasks.web_config/config/lava.keyring-file.tar.gz" |tar -xzf - -C $HOME/.lava/
 
 # start_rpcprovider.sh script
 cat <<EOT > $HOME/start_rpcprovider.sh
+cd $HOME/.lava
 /root/go/bin/lavad rpcprovider osmosis-testnet-provider.yml --from notional --geolocation 2 --chain-id lava-testnet-2 --log_level debug --node https://public-rpc-testnet2.lavanet.xyz:443/rpc/
 EOT
-
-# create osmosis-testnet-provider.yml
-wget "http://tasks.web_config/config/lava.osmosis-testnet-provider.yml" -O cd $HOME/.lava/osmosis-testnet-provider.yml
 
 # run
 cd $HOME/.lava
