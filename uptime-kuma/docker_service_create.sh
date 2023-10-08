@@ -1,3 +1,7 @@
+# delete existing service
+docker service rm uptime-kuma
+
+
 docker service create \
   --name uptime-kuma \
   --replicas 1 \
