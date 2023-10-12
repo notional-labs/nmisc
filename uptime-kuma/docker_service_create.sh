@@ -10,4 +10,4 @@ docker service create \
   --network net1 \
   --constraint 'node.hostname==nmisc1' \
   --restart-condition any \
-  louislam/uptime-kuma:1.15.1
+  louislam/uptime-kuma:1.23.3
