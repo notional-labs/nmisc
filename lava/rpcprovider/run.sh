@@ -16,7 +16,7 @@ pacman -S --noconfirm go git base-devel wget pigz jq cronie screen unzip logrota
 cd $HOME
 git clone https://github.com/lavanet/lava
 cd lava
-git checkout v0.21.1.2
+git checkout v0.24.0
 make install
 
 $HOME/go/bin/lavad config chain-id lava-testnet-2
