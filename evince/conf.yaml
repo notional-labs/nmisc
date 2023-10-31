@@ -1,4 +1,4 @@
-quickhost: "https://rp.quicksilver.zone:443"
+quickhost: "https://rpc.quicksilver.zone:443"
 chainhost: "https://rpc.%s.quicksilver.zone:443"
 chains:
   - "quicksilver"
@@ -7,6 +7,8 @@ chains:
   - "osmosis"
   - "regen"
   - "sommelier"
+  - "composable"
+  - "juno"
 aprurl: "https://chains.cosmos.directory"
 aprcachetime: 15 #minutes
 lcdendpoint: "https://lcd.quicksilver.zone"
