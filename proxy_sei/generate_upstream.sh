@@ -1,8 +1,3 @@
-if [[ -z "$CHAIN_REGISTRY_INI_URL" ]]; then
-  echo "no env var CHAIN_REGISTRY_INI_URL. Make sure put it into \$HOME/env.sh"
-  exit
-fi
-
 wget "http://tasks.web_config/config/NOTIONAL_API_KEY_SEI" -O $HOME/NOTIONAL_API_KEY_SEI.txt
 
 XAPIKEY=$(cat $HOME/NOTIONAL_API_KEY_SEI.txt)
