@@ -8,7 +8,11 @@ wget "http://tasks.web_config/config/notional.ventures.privkey.pem" -O /etc/ngin
 
 ########################################################################################################################
 # nginx
-curl -s "https://raw.githubusercontent.com/notional-labs/nmisc/main/proxy_sei/nginx.conf" > /etc/nginx/nginx.conf
+curl -s "https://raw.githubusercontent.com/notional-labs/nmisc/main/proxy_sei/nginx.conf" > $HOME/nginx.conf.template
+wget "http://tasks.web_config/config/NOTIONAL_API_KEY_SEI" -O $HOME/NOTIONAL_API_KEY_SEI.txt
+XAPIKEY=$(cat $HOME/NOTIONAL_API_KEY_SEI.txt)
+export NOTIONAL_API_KEY="$XAPIKEY"
+cat $HOME/nginx.conf.template |envsubst '$NOTIONAL_API_KEY' > /etc/nginx/nginx.conf
 
 curl -Ls "https://raw.githubusercontent.com/notional-labs/nmisc/main/proxy_sei/generate_upstream.sh" > $HOME/generate_upstream.sh
 sleep 1

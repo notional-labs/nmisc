@@ -1,8 +1,3 @@
-wget "http://tasks.web_config/config/NOTIONAL_API_KEY_SEI" -O $HOME/NOTIONAL_API_KEY_SEI.txt
-
-XAPIKEY=$(cat $HOME/NOTIONAL_API_KEY_SEI.txt)
-export NOTIONAL_API_KEY="$XAPIKEY"
-
 SERVICES=$(cat <<-END
 sei-archive-sub1
 sei-archive-sub
