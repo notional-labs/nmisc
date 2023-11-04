@@ -14,7 +14,7 @@ UPSTREAM_CONFIG_FILE="/etc/nginx/upstream.conf"
 # generate upstream.conf
 echo "" > $UPSTREAM_CONFIG_FILE
 for service_name in $SERVICES; do
-  cat <<EOT >> $UPSTREAM_CONFIG_FILE_TMP
+  cat <<EOT >> $UPSTREAM_CONFIG_FILE
     upstream backend_rpc_$service_name {
         keepalive 16;
         server r-${service_name}--${NOTIONAL_API_KEY}.gw.notionalapi.com:80;
