@@ -1,0 +1,39 @@
+import flask
+import requests
+from prometheus_client.parser import text_string_to_metric_families
+
+app = flask.Flask(__name__)
+
+
+@app.route('/get_icq_status', methods=['GET'])
+def get_icq_status():
+    chain_id = flask.request.args.get('chain_id')
+    qsdelcheck_endpoint = flask.request.args.get('qsdelcheck_endpoint')
+    print("chain_id: " + chain_id)
+    print("qsdelcheck_endpoint: " + qsdelcheck_endpoint)
+
+    prometheus_request = requests.get(qsdelcheck_endpoint)
+    str_res = prometheus_request.text
+    itr_metrics = text_string_to_metric_families(str_res)
+    val = find_metric(itr_metrics, "qsd_icq_historic_queue", chain_id)
+    # print("value: ", val)
+
+    try:
+        if val is not None:
+            return 'value = {0} => healthy'.format(val), 200
+    except:
+        print("Err")
+
+    return "down", 500
+
+
+def find_metric(itr_metrics, metric_name, chain_id):
+    for family in itr_metrics:
+        for sample in family.samples:
+            # print("Name: {0} Labels: {1} Value: {2}".format(*sample))
+            if sample.name == metric_name and (sample.labels["chain_id"] == chain_id):
+                return sample.value
+
+
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=5001)
