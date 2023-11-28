@@ -1,7 +1,8 @@
 import flask
-import requests
+import requests_cache
 from prometheus_client.parser import text_string_to_metric_families
 
+session = requests_cache.CachedSession('my_cache', backend='memory', expire_after=5, stale_if_error=True)
 app = flask.Flask(__name__)
 
 
@@ -9,18 +10,21 @@ app = flask.Flask(__name__)
 def get_icq_status():
     chain_id = flask.request.args.get('chain_id')
     qsdelcheck_endpoint = flask.request.args.get('qsdelcheck_endpoint')
+    threshold = flask.request.args.get('threshold')
     print("chain_id: " + chain_id)
     print("qsdelcheck_endpoint: " + qsdelcheck_endpoint)
+    print("threshold: " + threshold)
 
-    prometheus_request = requests.get(qsdelcheck_endpoint)
+    prometheus_request = session.get(qsdelcheck_endpoint)
     str_res = prometheus_request.text
     itr_metrics = text_string_to_metric_families(str_res)
     val = find_metric(itr_metrics, "qsd_icq_historic_queue", chain_id)
-    # print("value: ", val)
+    print("value: ", val)
 
     try:
         if val is not None:
-            return 'value = {0} => healthy'.format(val), 200
+            if val < int(threshold):
+                return 'value = {0} => healthy'.format(val), 200
     except:
         print("Err")
 
