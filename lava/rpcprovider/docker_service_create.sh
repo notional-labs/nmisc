@@ -1,6 +1,10 @@
 # usage: ./docker_service_create.sh chain_name
 # eg., ./docker_service_create.sh osmosis-testnet
 
+# supported chains:
+# - osmosis-testnet
+# - sub_evmos
+
 chain_name="$1"
 
 if [[ -z $chain_name ]]; then
