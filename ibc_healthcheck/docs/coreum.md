@@ -2,14 +2,14 @@
 
 | chain         | channel     |
 |:--------------|:------------|
-| osmosis       | channel-2   |
 | axelar        | channel-6   |
-| cosmoshub     | channel-9   |
-| gravitybridge | channel-7   |
-| evmos         | channel-8   |
-| kava          | channel-18  |
-| secret        | channel-12  |
-| noble         | channel-13  |
-| unknown       | channel-14  |
 | bandchain     | channel-15  |
+| cosmoshub     | channel-9   |
 | dydx          | channel-16  |
+| evmos         | channel-8   |
+| gravitybridge | channel-7   |
+| kava          | channel-18  |
+| kujira        | channel-14  |
+| noble         | channel-13  |
+| osmosis       | channel-2   |
+| secret        | channel-12  |
