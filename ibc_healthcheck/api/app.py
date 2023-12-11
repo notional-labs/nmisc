@@ -1,42 +1,28 @@
 import flask
-import requests_cache
-from prometheus_client.parser import text_string_to_metric_families
+import requests
 
-session = requests_cache.CachedSession('my_cache', backend='memory', expire_after=5, stale_if_error=True)
 app = flask.Flask(__name__)
 
 
 @app.route('/get_ibc_status', methods=['GET'])
 def get_ibc_status():
-    # chain_id = flask.request.args.get('chain_id')
-    # qsdelcheck_endpoint = flask.request.args.get('qsdelcheck_endpoint')
-    # threshold = flask.request.args.get('threshold')
-    # print("chain_id: " + chain_id)
-    # print("qsdelcheck_endpoint: " + qsdelcheck_endpoint)
-    # print("threshold: " + threshold)
-    #
-    # prometheus_request = session.get(qsdelcheck_endpoint)
-    # str_res = prometheus_request.text
-    # itr_metrics = text_string_to_metric_families(str_res)
-    # val = find_metric(itr_metrics, "qsd_icq_historic_queue", chain_id)
-    # print("value: ", val)
-    #
-    # try:
-    #     if val is not None:
-    #         if val < int(threshold):
-    #             return 'value = {0} => healthy'.format(val), 200
-    # except:
-    #     print("Err")
+    url = flask.request.args.get('url')
+    threshold = flask.request.args.get('threshold')
+
+    print("url: " + url)
+    print("threshold: " + threshold)
+
+    try:
+        rpc_request = requests.get(url)
+        rpc_request_json = rpc_request.json()
+        total = rpc_request_json["pagination"]["total"]
+
+        if int(total) < int(threshold):
+            return 'total = {0} => healthy'.format(total), 200
+    except (Exception,):
+        print("Err")
 
     return "down", 500
-
-
-def find_metric(itr_metrics, metric_name, chain_id):
-    for family in itr_metrics:
-        for sample in family.samples:
-            # print("Name: {0} Labels: {1} Value: {2}".format(*sample))
-            if sample.name == metric_name and (sample.labels["chain_id"] == chain_id):
-                return sample.value
 
 
 if __name__ == '__main__':
