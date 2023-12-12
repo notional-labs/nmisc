@@ -4,5 +4,5 @@
 |:--------------|:------------|
 | cosmoshub     | channel-5   |
 | kujira        | channel-4   |
-| osmosis-1     | channel-1   |
+| osmosis       | channel-1   |
 
