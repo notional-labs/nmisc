@@ -13,9 +13,9 @@ pip install -r requirements.txt --break-system-packages
 
 wget "http://tasks.web_config/config/NOTIONAL_API_KEY_RELAYING" -O $HOME/NOTIONAL_API_KEY_RELAYING.txt
 NOTIONAL_API_KEY=$(cat $HOME/NOTIONAL_API_KEY_RELAYING.txt)
-#export NOTIONAL_API_KEY="$NOTIONAL_API_KEY"
+export NOTIONAL_API_KEY="$NOTIONAL_API_KEY"
 
-screen -S api -dm NOTIONAL_API_KEY=${NOTIONAL_API_KEY} /usr/sbin/python app.py
+screen -S api -dm /usr/sbin/python app.py
 
 ########################################################################################################################
 echo "Done!"
