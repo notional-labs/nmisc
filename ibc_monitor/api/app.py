@@ -95,6 +95,9 @@ def get_ibc_status():
 
                         rpc_request = requests.get(url)
                         rpc_request_json = rpc_request.json()
+
+                        client_id = rpc_request_json["identified_client_state"]["client_id"]
+                        res_channel["client_id"] = client_id
                         latest_height = rpc_request_json["identified_client_state"]["client_state"]["latest_height"]["revision_height"]
                         res_channel["latest_height"] = latest_height
                         counter_chain_id = rpc_request_json["identified_client_state"]["client_state"]["chain_id"]
