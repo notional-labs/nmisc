@@ -118,9 +118,6 @@ def get_ibc_status():
                         res_channel["counter_chain_id"] = counter_chain_id
                         counter_chain_obj = map_chainid_to_name.get(counter_chain_id)
 
-                        if counter_chain_obj == "sei":
-                            print(counter_chain_obj)
-
                         block_time = get_block_time(counter_chain_obj, latest_height)
                         res_channel["block_time"] = block_time
 
