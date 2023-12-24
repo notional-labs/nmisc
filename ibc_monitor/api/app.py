@@ -77,19 +77,16 @@ def get_ibc_status():
                     res_channel["counter_chain_id"] = ""
                     res_channel["block_time"] = ""
                     res_channel["time_ago"] = ""
+                    res_channel["pending_packets"] = -1
 
                     counter_chain_id = ""
 
                     try:
-                        url = ""
+                        base_url = "https://a-{}--{}.gw.notionalapi.com".format(chain_obj, NOTIONAL_API_KEY)
                         if type(chain_obj) == dict:
-                            url = "{}/ibc/core/channel/v1/channels/{}/ports/transfer/client_state" \
-                                .format(chain_obj["api"], channel_id)
-                        else:
-                            url = "https://a-{}--{}.gw.notionalapi.com" \
-                                  "/ibc/core/channel/v1/channels/{}/ports/transfer/client_state" \
-                                .format(chain_obj, NOTIONAL_API_KEY, channel_id)
+                            base_url = chain_obj["api"]
 
+                        url = "{}/ibc/core/channel/v1/channels/{}/ports/transfer/client_state".format(base_url, channel_id)
                         rpc_request = requests.get(url)
                         rpc_request_json = rpc_request.json()
 
@@ -108,6 +105,13 @@ def get_ibc_status():
 
                         timeagostr = timeago.format(parseDate(block_time), datetime.datetime.utcnow())
                         res_channel["time_ago"] = timeagostr
+
+                        url = "{}/ibc/core/channel/v1/channels/{}/ports/transfer/packet_commitments".format(base_url, channel_id)
+                        rpc_request = requests.get(url)
+                        rpc_request_json = rpc_request.json()
+                        pending_packets = int(rpc_request_json["pagination"]["total"])
+                        res_channel["pending_packets"] = pending_packets
+
                         print("chain_id={}, client={}, channel_id={}, height={}, time={}, timeago={}"
                               .format(chain_id, counter_chain_id, channel_id, latest_height, block_time, timeagostr))
 
