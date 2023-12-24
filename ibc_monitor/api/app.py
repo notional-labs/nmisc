@@ -88,12 +88,14 @@ def get_ibc_status():
                         "chain_id": chain_id,
                     }
                     channel_id = channel[1]
-                    counter_chain_id = ""
                     res_channel["channel_id"] = channel_id
+                    res_channel["client_id"] = ""
                     res_channel["latest_height"] = ""
                     res_channel["counter_chain_id"] = ""
                     res_channel["block_time"] = ""
                     res_channel["time_ago"] = ""
+
+                    counter_chain_id = ""
 
                     try:
                         url = ""
