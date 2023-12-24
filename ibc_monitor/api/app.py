@@ -51,11 +51,14 @@ def get_block_time(chain_obj, block_num):
 
     rpc_request = requests.get(url)
     rpc_request_json = rpc_request.json()
-    block_time = rpc_request_json["result"]["block"]["header"]["time"]
+
+    block_time = ""
 
     # fix for sei
     if chain_obj == "sei":
         block_time = rpc_request_json["block"]["header"]["time"]
+    else:
+        block_time = rpc_request_json["result"]["block"]["header"]["time"]
 
     return block_time
 
@@ -114,6 +117,9 @@ def get_ibc_status():
 
                         res_channel["counter_chain_id"] = counter_chain_id
                         counter_chain_obj = map_chainid_to_name.get(counter_chain_id)
+
+                        if counter_chain_obj == "sei":
+                            print(counter_chain_obj)
 
                         block_time = get_block_time(counter_chain_obj, latest_height)
                         res_channel["block_time"] = block_time
