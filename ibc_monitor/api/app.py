@@ -19,14 +19,13 @@ map_chainid_to_name = {
     "gravity-bridge-3": "gravitybridge",
     "kaiyo-1": "kujira",
     "kava_2222-10": "kava",
-    # "laozi-mainnet": "bandchain",
     "laozi-mainnet": {
         "rpc": "http://rpc.laozi1.bandchain.org",
         "api": "https://laozi1.bandchain.org/api",
     },
     "noble-1": "noble",
     "osmosis-1": "osmosis",
-    # "secret-4": "secret",
+    "pacific-1": "sei",
     "secret-4": {
         "rpc": "https://secretnetwork-rpc.lavenderfive.com",
         "api": "https://secretnetwork-api.lavenderfive.com",
@@ -73,6 +72,7 @@ def get_ibc_status():
         for chain in chains:
             chain_id = chain["id"]
             chain_obj = map_chainid_to_name.get(chain_id)
+
             if chain_obj is not None:
                 channels = chain["packet_filter"]["list"]
                 for channel in channels:
@@ -82,6 +82,10 @@ def get_ibc_status():
                     channel_id = channel[1]
                     counter_chain_id = ""
                     res_channel["channel_id"] = channel_id
+                    res_channel["latest_height"] = ""
+                    res_channel["counter_chain_id"] = ""
+                    res_channel["block_time"] = ""
+                    res_channel["time_ago"] = ""
 
                     try:
                         url = ""
