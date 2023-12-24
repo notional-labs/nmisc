@@ -1,3 +1,4 @@
+import json
 import os
 
 import datetime
@@ -10,27 +11,9 @@ NOTIONAL_API_KEY = os.environ["NOTIONAL_API_KEY"]
 
 # to figure out chain name on Cosmosia, if chain is not available on Cosmosia then put the external rpc and api
 # endpoints to
-map_chainid_to_name = {
-    "axelar-dojo-1": "axelar",
-    "coreum-mainnet-1": "coreum",
-    "cosmoshub-4": "cosmoshub",
-    "dydx-mainnet-1": "dydx",
-    "evmos_9001-2": "evmos",
-    "gravity-bridge-3": "gravitybridge",
-    "kaiyo-1": "kujira",
-    "kava_2222-10": "kava",
-    "laozi-mainnet": {
-        "rpc": "http://rpc.laozi1.bandchain.org",
-        "api": "https://laozi1.bandchain.org/api",
-    },
-    "noble-1": "noble",
-    "osmosis-1": "osmosis",
-    "pacific-1": "sei",
-    "secret-4": {
-        "rpc": "https://secretnetwork-rpc.lavenderfive.com",
-        "api": "https://secretnetwork-api.lavenderfive.com",
-    },
-}
+map_chainid_to_name = {}
+with open("" + os.path.dirname(__file__) + "/map_chainid_to_name.json") as json_file:
+    map_chainid_to_name = json.load(json_file)
 
 app = flask.Flask(__name__)
 

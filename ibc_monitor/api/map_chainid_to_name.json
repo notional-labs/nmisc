@@ -1,0 +1,21 @@
+{
+    "axelar-dojo-1": "axelar",
+    "coreum-mainnet-1": "coreum",
+    "cosmoshub-4": "cosmoshub",
+    "dydx-mainnet-1": "dydx",
+    "evmos_9001-2": "evmos",
+    "gravity-bridge-3": "gravitybridge",
+    "kaiyo-1": "kujira",
+    "kava_2222-10": "kava",
+    "laozi-mainnet": {
+        "rpc": "http://rpc.laozi1.bandchain.org",
+        "api": "https://laozi1.bandchain.org/api"
+    },
+    "noble-1": "noble",
+    "osmosis-1": "osmosis",
+    "pacific-1": "sei",
+    "secret-4": {
+        "rpc": "https://secretnetwork-rpc.lavenderfive.com",
+        "api": "https://secretnetwork-api.lavenderfive.com"
+    }
+}
