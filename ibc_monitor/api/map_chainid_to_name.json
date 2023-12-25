@@ -2,6 +2,7 @@
     "axelar-dojo-1": "axelar",
     "coreum-mainnet-1": "coreum",
     "cosmoshub-4": "cosmoshub",
+    "chihuahua-1": "chihuahua",
     "dydx-mainnet-1": "dydx",
     "evmos_9001-2": "evmos",
     "furya-1": "furya",
@@ -13,6 +14,8 @@
         "rpc": "http://rpc.laozi1.bandchain.org",
         "api": "https://laozi1.bandchain.org/api"
     },
+    "migaloo-1": "whitewhale",
+    "neutron-1": "neutron",
     "noble-1": "noble",
     "osmosis-1": "osmosis",
     "pacific-1": "sei",
