@@ -23,5 +23,6 @@
     "secret-4": {
         "rpc": "https://secretnetwork-rpc.lavenderfive.com",
         "api": "https://secretnetwork-api.lavenderfive.com"
-    }
+    },
+    "umee-1": "umee"
 }
