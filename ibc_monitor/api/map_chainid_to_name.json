@@ -1,7 +1,14 @@
 {
+    "agoric-3": "agoric",
     "axelar-dojo-1": "axelar",
+    "canto_7700-1": {
+        "rpc": "https://rpc.canto.nodestake.top",
+        "api": "https://api.canto.nodestake.top"
+    },
     "celestia": "celestia",
+    "centauri-1": "composable",
     "coreum-mainnet-1": "coreum",
+    "crescent-1": "crescent",
     "cosmoshub-4": "cosmoshub",
     "chihuahua-1": "chihuahua",
     "dydx-mainnet-1": "dydx",
@@ -19,8 +26,10 @@
     "neutron-1": "neutron",
     "noble-1": "noble",
     "osmosis-1": "osmosis",
+    "quicksilver-2": "quicksilver",
     "pacific-1": "sei",
     "phoenix-1": "terra2",
+    "stargaze-1": "stargaze",
     "secret-4": {
         "rpc": "https://secretnetwork-rpc.lavenderfive.com",
         "api": "https://secretnetwork-api.lavenderfive.com"
