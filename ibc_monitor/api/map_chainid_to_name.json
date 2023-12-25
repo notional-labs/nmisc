@@ -4,7 +4,9 @@
     "cosmoshub-4": "cosmoshub",
     "dydx-mainnet-1": "dydx",
     "evmos_9001-2": "evmos",
+    "furya-1": "furya",
     "gravity-bridge-3": "gravitybridge",
+    "juno-1": "juno",
     "kaiyo-1": "kujira",
     "kava_2222-10": "kava",
     "laozi-mainnet": {
@@ -14,6 +16,7 @@
     "noble-1": "noble",
     "osmosis-1": "osmosis",
     "pacific-1": "sei",
+    "phoenix-1": "terra2",
     "secret-4": {
         "rpc": "https://secretnetwork-rpc.lavenderfive.com",
         "api": "https://secretnetwork-api.lavenderfive.com"
