@@ -67,58 +67,38 @@ def get_ibc_status():
             if chain_obj is not None:
                 channels = chain["packet_filter"]["list"]
                 for channel in channels:
-                    res_channel = {
-                        "chain_id": chain_id,
-                    }
-                    channel_id = channel[1]
-                    res_channel["channel_id"] = channel_id
-                    res_channel["client_id"] = ""
-                    res_channel["latest_height"] = ""
-                    res_channel["counter_chain_id"] = ""
-                    res_channel["block_time"] = ""
-                    res_channel["time_ago"] = ""
-                    res_channel["pending_packets"] = -1
+                    res_channel = {"chain_id": chain_id, "channel_id": channel[1], "client_id": "", "latest_height": "",
+                                   "counter_chain_id": "", "block_time": "", "time_ago": "", "pending_packets": -1}
 
-                    counter_chain_id = ""
+                    base_url = "https://a-{}--{}.gw.notionalapi.com".format(chain_obj, NOTIONAL_API_KEY)
+                    if type(chain_obj) == dict:
+                        base_url = chain_obj["api"]
 
                     try:
-                        base_url = "https://a-{}--{}.gw.notionalapi.com".format(chain_obj, NOTIONAL_API_KEY)
-                        if type(chain_obj) == dict:
-                            base_url = chain_obj["api"]
-
-                        url = "{}/ibc/core/channel/v1/channels/{}/ports/transfer/client_state".format(base_url, channel_id)
+                        url = "{}/ibc/core/channel/v1/channels/{}/ports/transfer/client_state".format(base_url, res_channel["channel_id"])
                         rpc_request = requests.get(url)
                         rpc_request_json = rpc_request.json()
 
-                        client_id = rpc_request_json["identified_client_state"]["client_id"]
-                        res_channel["client_id"] = client_id
-                        latest_height = rpc_request_json["identified_client_state"]["client_state"]["latest_height"]["revision_height"]
+                        res_channel["client_id"] = rpc_request_json["identified_client_state"]["client_id"]
+                        res_channel["latest_height"] = rpc_request_json["identified_client_state"]["client_state"]["latest_height"]["revision_height"]
+                        res_channel["counter_chain_id"] = rpc_request_json["identified_client_state"]["client_state"]["chain_id"]
 
-                        res_channel["latest_height"] = latest_height
-                        counter_chain_id = rpc_request_json["identified_client_state"]["client_state"]["chain_id"]
+                        counter_chain_obj = map_chainid_to_name.get(res_channel["counter_chain_id"] )
+                        res_channel["block_time"] = get_block_time(counter_chain_obj, res_channel["latest_height"])
+                        res_channel["time_ago"] = timeago.format(parseDate(res_channel["block_time"]), datetime.datetime.utcnow())
+                    except Exception:
+                        pass
 
-                        res_channel["counter_chain_id"] = counter_chain_id
-                        counter_chain_obj = map_chainid_to_name.get(counter_chain_id)
-
-                        block_time = get_block_time(counter_chain_obj, latest_height)
-                        res_channel["block_time"] = block_time
-
-                        timeagostr = timeago.format(parseDate(block_time), datetime.datetime.utcnow())
-                        res_channel["time_ago"] = timeagostr
-
-                        url = "{}/ibc/core/channel/v1/channels/{}/ports/transfer/packet_commitments".format(base_url, channel_id)
+                    try:
+                        url = "{}/ibc/core/channel/v1/channels/{}/ports/transfer/packet_commitments".format(base_url, res_channel["channel_id"])
                         rpc_request = requests.get(url)
                         rpc_request_json = rpc_request.json()
                         pending_packets = int(rpc_request_json["pagination"]["total"])
                         res_channel["pending_packets"] = pending_packets
+                    except Exception:
+                        pass
 
-                        print("chain_id={}, client={}, channel_id={}, height={}, time={}, timeago={}"
-                              .format(chain_id, counter_chain_id, channel_id, latest_height, block_time, timeagostr))
-
-                    except (Exception,):
-                        print("chain_id={}, client={}, channel_id={}, error"
-                              .format(chain_id, counter_chain_id, channel_id))
-
+                    print(res_channel)
                     res.append(res_channel)
 
         return res, 200
