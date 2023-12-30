@@ -11,6 +11,10 @@
     "centauri-1": "composable",
     "chihuahua-1": "chihuahua",
     "columbus-5": "terra",
+    "comdex-1": {
+        "rpc": "https://rpc.comdex.one",
+        "api": "https://rest.comdex.one"
+    },
     "coreum-mainnet-1": "coreum",
     "cosmoshub-4": "cosmoshub",
     "crescent-1": "crescent",
@@ -47,5 +51,6 @@
         "rpc": "https://secretnetwork-rpc.lavenderfive.com",
         "api": "https://secretnetwork-api.lavenderfive.com"
     },
+    "sentinelhub-2": "sentinel",
     "umee-1": "umee"
 }
