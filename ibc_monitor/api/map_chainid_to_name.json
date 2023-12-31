@@ -40,6 +40,10 @@
     "noble-1": "noble",
     "omniflixhub-1": "omniflixhub",
     "osmosis-1": "osmosis",
+    "pirin-1": {
+        "rpc": "https://pirin-cl.nolus.network:26657",
+        "api": "https://pirin-cl.nolus.network:1317"
+    },
     "quasar-1": "quasar",
     "quicksilver-2": "quicksilver",
     "pacific-1": "sei",
