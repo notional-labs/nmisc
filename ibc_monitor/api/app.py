@@ -125,8 +125,11 @@ def get_wallet_balance():
 
     try:
         refill_conf = {}
-        with open(f'{os.path.dirname(__file__)}/conf/{relayer_hub_name}.{process}.json') as json_file:
-            refill_conf = json.load(json_file)
+        try:
+            with open(f'{os.path.dirname(__file__)}/conf/{relayer_hub_name}.{process}.json') as json_file:
+                refill_conf = json.load(json_file)
+        except Exception:
+            pass
 
         url = f'https://grafana-relayer.notional.ventures/hermes_{process}/{relayer_hub_name}/metrics'
         prometheus_request = session.get(url)
@@ -135,7 +138,15 @@ def get_wallet_balance():
         for family in itr_metrics:
             for sample in family.samples:
                 if sample.name == "wallet_balance":
-                    refill_threshold = refill_conf.get(sample.labels["account"]).get("refill_threshold")
+                    refill_threshold = 0
+                    message = ""
+                    try:
+                        refill_threshold = refill_conf.get(sample.labels["account"]).get("refill_threshold")
+                    except Exception:
+                        pass
+
+                    if refill_threshold == 0:
+                        message = "no refill configured"
 
                     item = {
                         "account": sample.labels["account"],
@@ -143,6 +154,7 @@ def get_wallet_balance():
                         "denom": sample.labels["denom"],
                         "value": sample.value,
                         "refill_threshold": refill_threshold,
+                        "message": message,
                     }
                     res.append(item)
 
