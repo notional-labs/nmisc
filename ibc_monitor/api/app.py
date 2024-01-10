@@ -6,6 +6,10 @@ import flask
 import requests
 import timeago
 import toml
+import requests_cache
+from prometheus_client.parser import text_string_to_metric_families
+
+session = requests_cache.CachedSession('my_cache', backend='memory', expire_after=5, stale_if_error=True)
 
 NOTIONAL_API_KEY = os.environ["NOTIONAL_API_KEY"]
 
@@ -103,6 +107,44 @@ def get_ibc_status():
                         res.append(res_channel)
             except Exception:
                 pass
+    except Exception:
+        # printing stack trace
+        traceback.print_exc()
+
+    return res, 200
+
+
+@app.route('/get_wallet_balance', methods=['GET'])
+def get_wallet_balance():
+    relayer_hub_name = flask.request.args.get('relayer_hub_name')
+    print("relayer_hub_name: " + relayer_hub_name)
+
+    res = []
+
+    try:
+        main_process_metric_url = f'https://grafana-relayer.notional.ventures/hermes/{relayer_hub_name}/metrics'
+        prometheus_request = session.get(main_process_metric_url)
+        str_res = prometheus_request.text
+        itr_metrics = text_string_to_metric_families(str_res)
+        for family in itr_metrics:
+            for sample in family.samples:
+                if sample.name == "wallet_balance":
+                    # print("Name: {0} Labels: {1} Value: {2}".format(*sample))
+
+                    # # figure out chain_name, if type is dict => dont have this chain in Cosmosia
+                    # chain_name = map_chainid_to_name.get(sample.labels["chain"])
+                    # if type(chain_name) == dict:
+                    #     chain_name = ""
+
+                    item = {
+                        "account": sample.labels["account"],
+                        "chain_id": sample.labels["chain"],
+                        # "chain_name": chain_name,
+                        "denom": sample.labels["denom"],
+                        "value": sample.value
+                    }
+                    res.append(item)
+
     except Exception:
         # printing stack trace
         traceback.print_exc()
