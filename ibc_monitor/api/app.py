@@ -116,32 +116,33 @@ def get_ibc_status():
 
 @app.route('/get_wallet_balance', methods=['GET'])
 def get_wallet_balance():
+    process = flask.request.args.get('process')
     relayer_hub_name = flask.request.args.get('relayer_hub_name')
-    print("relayer_hub_name: " + relayer_hub_name)
+    print(f'process: {process}')
+    print(f'relayer_hub_name: {relayer_hub_name}')
 
     res = []
 
     try:
-        main_process_metric_url = f'https://grafana-relayer.notional.ventures/hermes/{relayer_hub_name}/metrics'
-        prometheus_request = session.get(main_process_metric_url)
+        refill_conf = {}
+        with open(f'{os.path.dirname(__file__)}/conf/{relayer_hub_name}.{process}.json') as json_file:
+            refill_conf = json.load(json_file)
+
+        url = f'https://grafana-relayer.notional.ventures/hermes_{process}/{relayer_hub_name}/metrics'
+        prometheus_request = session.get(url)
         str_res = prometheus_request.text
         itr_metrics = text_string_to_metric_families(str_res)
         for family in itr_metrics:
             for sample in family.samples:
                 if sample.name == "wallet_balance":
-                    # print("Name: {0} Labels: {1} Value: {2}".format(*sample))
-
-                    # # figure out chain_name, if type is dict => dont have this chain in Cosmosia
-                    # chain_name = map_chainid_to_name.get(sample.labels["chain"])
-                    # if type(chain_name) == dict:
-                    #     chain_name = ""
+                    refill_threshold = refill_conf.get(sample.labels["account"]).get("refill_threshold")
 
                     item = {
                         "account": sample.labels["account"],
                         "chain_id": sample.labels["chain"],
-                        # "chain_name": chain_name,
                         "denom": sample.labels["denom"],
-                        "value": sample.value
+                        "value": sample.value,
+                        "refill_threshold": refill_threshold,
                     }
                     res.append(item)
 
