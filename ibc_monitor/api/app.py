@@ -148,6 +148,8 @@ def get_wallet_balance():
                     if refill_threshold == 0:
                         message = "no refill configured"
 
+                    need_refill = sample.value < refill_threshold
+
                     item = {
                         "account": sample.labels["account"],
                         "chain_id": sample.labels["chain"],
@@ -155,6 +157,7 @@ def get_wallet_balance():
                         "value": sample.value,
                         "refill_threshold": refill_threshold,
                         "message": message,
+                        "need_refill": need_refill,
                     }
                     res.append(item)
 
