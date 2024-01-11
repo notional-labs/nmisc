@@ -1,0 +1,44 @@
+{
+  "cosmos1z2j85nckmyrhzwnwdek6s87yqkxrcnfumc36xt": {
+    "chain_id": "cosmoshub-4",
+    "denom": "uatom",
+    "refill_threshold": 102040,
+    "refill_value": 204080
+  },
+  "furya1z2j85nckmyrhzwnwdek6s87yqkxrcnfu5d2vne": {
+    "chain_id": "furya-1",
+    "denom": "ufury",
+    "refill_threshold": 1000000000,
+    "refill_value": 2000000000
+  },
+  "juno1z2j85nckmyrhzwnwdek6s87yqkxrcnfud2jpph": {
+    "chain_id": "juno-1",
+    "denom": "ujuno",
+    "refill_threshold": 1666666,
+    "refill_value": 3333332
+  },
+  "kujira1z2j85nckmyrhzwnwdek6s87yqkxrcnfu2snztp": {
+    "chain_id": "kaiyo-1",
+    "denom": "ukuji",
+    "refill_threshold": 235294,
+    "refill_value": 470588
+  },
+  "noble1z2j85nckmyrhzwnwdek6s87yqkxrcnfunmyj79": {
+    "chain_id": "noble-1",
+    "denom": "uusdc",
+    "refill_threshold": 1000000,
+    "refill_value": 2000000
+  },
+  "osmo1z2j85nckmyrhzwnwdek6s87yqkxrcnfunrz2se": {
+    "chain_id": "osmosis-1",
+    "denom": "uosmo",
+    "refill_threshold": 555555,
+    "refill_value": 1111110
+  },
+  "terra1z2j85nckmyrhzwnwdek6s87yqkxrcnfuaut6yt": {
+    "chain_id": "phoenix-1",
+    "denom": "uluna",
+    "refill_threshold": 1428571,
+    "refill_value": 2857142
+  }
+}

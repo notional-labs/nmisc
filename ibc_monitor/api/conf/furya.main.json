@@ -1,0 +1,44 @@
+{
+  "cosmos195qlhxp0ztx0drlw6k3ng29n7skgt62rzktg9r": {
+    "chain_id": "cosmoshub-4",
+    "denom": "uatom",
+    "refill_threshold": 0,
+    "refill_value": 0
+  },
+  "furya195qlhxp0ztx0drlw6k3ng29n7skgt62rdrs7s3": {
+    "chain_id": "furya-1",
+    "denom": "ufury",
+    "refill_threshold": 0,
+    "refill_value": 0
+  },
+  "juno195qlhxp0ztx0drlw6k3ng29n7skgt62r5ygnzl": {
+    "chain_id": "juno-1",
+    "denom": "ujuno",
+    "refill_threshold": 0,
+    "refill_value": 0
+  },
+  "kujira195qlhxp0ztx0drlw6k3ng29n7skgt62rn7fsgf": {
+    "chain_id": "kaiyo-1",
+    "denom": "ukuji",
+    "refill_threshold": 0,
+    "refill_value": 0
+  },
+  "noble195qlhxp0ztx0drlw6k3ng29n7skgt62r247qad": {
+    "chain_id": "noble-1",
+    "denom": "uusdc",
+    "refill_threshold": 0,
+    "refill_value": 0
+  },
+  "osmo195qlhxp0ztx0drlw6k3ng29n7skgt62r2dccn3": {
+    "chain_id": "osmosis-1",
+    "denom": "uosmo",
+    "refill_threshold": 0,
+    "refill_value": 0
+  },
+  "terra195qlhxp0ztx0drlw6k3ng29n7skgt62ryj3g8r": {
+    "chain_id": "phoenix-1",
+    "denom": "uluna",
+    "refill_threshold": 0,
+    "refill_value": 0
+  }
+}
