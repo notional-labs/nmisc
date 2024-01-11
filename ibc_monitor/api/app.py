@@ -139,9 +139,11 @@ def get_wallet_balance():
             for sample in family.samples:
                 if sample.name == "wallet_balance":
                     refill_threshold = 0
+                    refill_value = 0
                     message = ""
                     try:
                         refill_threshold = refill_conf.get(sample.labels["account"]).get("refill_threshold")
+                        refill_value = refill_conf.get(sample.labels["account"]).get("refill_value")
                     except Exception:
                         pass
 
@@ -158,6 +160,7 @@ def get_wallet_balance():
                         "refill_threshold": refill_threshold,
                         "message": message,
                         "need_refill": need_refill,
+                        "refill_value": refill_value,
                     }
                     res.append(item)
 
