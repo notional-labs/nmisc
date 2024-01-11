@@ -1,0 +1,74 @@
+{
+  "axelar19pg4lxrv7x9e0c7p8n67vf8hemeqgpxxmj66uk": {
+    "chain_id": "axelar-dojo-1",
+    "denom": "uaxl",
+    "refill_threshold": 1000000,
+    "refill_value": 2000000
+  },
+  "band19pg4lxrv7x9e0c7p8n67vf8hemeqgpxxxnvs0l": {
+    "chain_id": "laozi-mainnet",
+    "denom": "uband",
+    "refill_threshold": 625000,
+    "refill_value": 1250000
+  },
+  "core19pg4lxrv7x9e0c7p8n67vf8hemeqgpxxvj5fsv": {
+    "chain_id": "coreum-mainnet-1",
+    "denom": "ucore",
+    "refill_threshold": 5000000,
+    "refill_value": 10000000
+  },
+  "cosmos19pg4lxrv7x9e0c7p8n67vf8hemeqgpxxluvjhh": {
+    "chain_id": "cosmoshub-4",
+    "denom": "uatom",
+    "refill_threshold": 102040,
+    "refill_value": 204080
+  },
+  "dydx19pg4lxrv7x9e0c7p8n67vf8hemeqgpxxk9zkhq": {
+    "chain_id": "dydx-mainnet-1",
+    "denom": "adydx",
+    "refill_threshold": 400000,
+    "refill_value": 800000
+  },
+  "evmos10k2q8zhf7ds7fjzg5vlqly2xwdzcqx6hw6ukp8": {
+    "chain_id": "evmos_9001-2",
+    "denom": "aevmos",
+    "refill_threshold": 8.3e18,
+    "refill_value": 1.6e19
+  },
+  "gravity19pg4lxrv7x9e0c7p8n67vf8hemeqgpxxmv72jl": {
+    "chain_id": "gravity-bridge-3",
+    "denom": "ugraviton",
+    "refill_threshold": 166666666,
+    "refill_value": 333333332
+  },
+  "kava19pg4lxrv7x9e0c7p8n67vf8hemeqgpxxrfc0ps": {
+    "chain_id": "kava_2222-10",
+    "denom": "ukava",
+    "refill_threshold": 1333333,
+    "refill_value": 2666666
+  },
+  "kujira19pg4lxrv7x9e0c7p8n67vf8hemeqgpxxw5w26a": {
+    "chain_id": "kaiyo-1",
+    "denom": "ukuji",
+    "refill_threshold": 235294,
+    "refill_value": 470588
+  },
+  "noble19pg4lxrv7x9e0c7p8n67vf8hemeqgpxxhle60e": {
+    "chain_id": "noble-1",
+    "denom": "uusdc",
+    "refill_threshold": 1000000,
+    "refill_value": 2000000
+  },
+  "osmo19pg4lxrv7x9e0c7p8n67vf8hemeqgpxxh8lzp9": {
+    "chain_id": "osmosis-1",
+    "denom": "uosmo",
+    "refill_threshold": 555555,
+    "refill_value": 1111110
+  },
+  "secret19pg4lxrv7x9e0c7p8n67vf8hemeqgpxxaecm2t": {
+    "chain_id": "secret-4",
+    "denom": "uscrt",
+    "refill_threshold": 2500000,
+    "refill_value": 5000000
+  }
+}
