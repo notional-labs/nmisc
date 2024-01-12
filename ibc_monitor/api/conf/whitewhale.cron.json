@@ -1,0 +1,44 @@
+{
+  "chihuahua1h56arsdxu8xnlvl2fc474ut7qp42439gm26y4t": {
+    "chain_id": "chihuahua-1",
+    "denom": "uhuahua",
+    "refill_threshold": 33333333333,
+    "refill_value": 66666666666
+  },
+  "kava1h56arsdxu8xnlvl2fc474ut7qp42439gy2rhzw": {
+    "chain_id": "kava_2222-10",
+    "denom": "ukava",
+    "refill_threshold": 1333333,
+    "refill_value": 2666666
+  },
+  "umee1h56arsdxu8xnlvl2fc474ut7qp42439g2f24sm": {
+    "chain_id": "umee-1",
+    "denom": "uumee",
+    "refill_threshold": 181818181,
+    "refill_value": 363636362
+  },
+  "neutron1h56arsdxu8xnlvl2fc474ut7qp42439guq7gww": {
+    "chain_id": "neutron-1",
+    "denom": "untrn",
+    "refill_threshold": 714285,
+    "refill_value": 1428570
+  },
+  "stars1h56arsdxu8xnlvl2fc474ut7qp42439gvrqhlc": {
+    "chain_id": "stargaze-1",
+    "denom": "ustars",
+    "refill_threshold": 21276595,
+    "refill_value": 42553190
+  },
+  "axelar1h56arsdxu8xnlvl2fc474ut7qp42439gu3pzlg": {
+    "chain_id": "axelar-dojo-1",
+    "denom": "uaxl",
+    "refill_threshold": 1000000,
+    "refill_value": 2000000
+  },
+  "migaloo1h56arsdxu8xnlvl2fc474ut7qp42439g4t7sp8": {
+    "chain_id": "migaloo-1",
+    "denom": "uwhale",
+    "refill_threshold": 20000000,
+    "refill_value": 40000000
+  }
+}
