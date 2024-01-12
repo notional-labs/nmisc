@@ -1,0 +1,14 @@
+{
+  "inj14ysta5fddue344wpjqh8d95jpajswz6kdfwcws": {
+    "chain_id": "injective-1",
+    "denom": "inj",
+    "refill_threshold": 25906,
+    "refill_value": 51812,
+  },
+  "neutron14ysta5fddue344wpjqh8d95jpajswz6krls7x0": {
+    "chain_id": "neutron-1",
+    "denom": "untrn",
+    "refill_threshold": 714285,
+    "refill_value": 1428570,
+  }
+}
