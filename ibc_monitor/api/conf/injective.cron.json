@@ -2,13 +2,13 @@
   "inj10h5l52yth2873scd5swc65q23js6azmgx3zmcr": {
     "chain_id": "injective-1",
     "denom": "inj",
-    "refill_threshold": 25906,
-    "refill_value": 51812,
+    "refill_threshold": 2.65e16,
+    "refill_value": 5.3e16
   },
   "neutron10h5l52yth2873scd5swc65q23js6azmgg8uasu": {
     "chain_id": "neutron-1",
     "denom": "untrn",
     "refill_threshold": 714285,
-    "refill_value": 1428570,
+    "refill_value": 1428570
   }
 }
