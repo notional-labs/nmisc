@@ -1,0 +1,122 @@
+{
+  "akash1x4zagpr2e6674j3z7ujytglu6cf2stsxh6wtfw": {
+    "chain_id": "akashnet-2",
+    "denom": "uakt",
+    "refill_threshold": 344827,
+    "refill_value": 689654
+  },
+  "axelar1x4zagpr2e6674j3z7ujytglu6cf2stsx704ym4": {
+    "chain_id": "axelar-dojo-1",
+    "denom": "uaxl",
+    "refill_threshold": 1000000,
+    "refill_value": 2000000
+  },
+  "bcna1x4zagpr2e6674j3z7ujytglu6cf2stsxq3ndcx": {
+    "chain_id": "bitcanna-1",
+    "denom": "ubcna",
+    "refill_threshold": 66666666,
+    "refill_value": 133333332
+  },
+  "chihuahua1x4zagpr2e6674j3z7ujytglu6cf2stsxe5wz3k": {
+    "chain_id": "chihuahua-1",
+    "denom": "uhuahua",
+    "refill_threshold": 33333333333,
+    "refill_value": 66666666666
+  },
+  "cosmos1x4zagpr2e6674j3z7ujytglu6cf2stsx6prvs5": {
+    "chain_id": "cosmoshub-4",
+    "denom": "uatom",
+    "refill_threshold": 102040,
+    "refill_value": 204080
+  },
+  "cro1x4zagpr2e6674j3z7ujytglu6cf2stsxz6t4v9": {
+    "chain_id": "crypto-org-chain-mainnet-1",
+    "denom": "basecro",
+    "refill_threshold": 1111111111,
+    "refill_value": 2222222222
+  },
+  "gravity1x4zagpr2e6674j3z7ujytglu6cf2stsx73354u": {
+    "chain_id": "gravity-bridge-3",
+    "denom": "ugraviton",
+    "refill_threshold": 166666666,
+    "refill_value": 333333332
+  },
+  "juno1x4zagpr2e6674j3z7ujytglu6cf2stsxvnqhhg": {
+    "chain_id": "juno-1",
+    "denom": "ujuno",
+    "refill_threshold": 1666666,
+    "refill_value": 3333332
+  },
+  "ki1x4zagpr2e6674j3z7ujytglu6cf2stsxtvjr5q": {
+    "chain_id": "kichain-2",
+    "denom": "uxki",
+    "refill_threshold": 71428571,
+    "refill_value": 142857142
+  },
+  "mars1x4zagpr2e6674j3z7ujytglu6cf2stsx8u6490": {
+    "chain_id": "mars-1",
+    "denom": "umars",
+    "refill_threshold": 4545454,
+    "refill_value": 9090908
+  },
+  "nolus1x4zagpr2e6674j3z7ujytglu6cf2stsxv3nnj3": {
+    "chain_id": "pirin-1",
+    "denom": "unls",
+    "refill_threshold": 16666666,
+    "refill_value": 33333332
+  },
+  "omniflix1x4zagpr2e6674j3z7ujytglu6cf2stsx8lj482": {
+    "chain_id": "omniflixhub-1",
+    "denom": "uflix",
+    "refill_threshold": 3448275,
+    "refill_value": 6896550
+  },
+  "osmo1x4zagpr2e6674j3z7ujytglu6cf2stsxj6suxx": {
+    "chain_id": "osmosis-1",
+    "denom": "uosmo",
+    "refill_threshold": 555555,
+    "refill_value": 1111110
+  },
+  "quasar1x4zagpr2e6674j3z7ujytglu6cf2stsx5ze3a3": {
+    "chain_id": "quasar-1",
+    "denom": "uqsr",
+    "refill_threshold": 5747126,
+    "refill_value": 11494252
+  },
+  "quick1x4zagpr2e6674j3z7ujytglu6cf2stsx39n7fx": {
+    "chain_id": "quicksilver-2",
+    "denom": "uqck",
+    "refill_threshold": 10000000,
+    "refill_value": 20000000
+  },
+  "regen1x4zagpr2e6674j3z7ujytglu6cf2stsx9rgsxs": {
+    "chain_id": "regen-1",
+    "denom": "uregen",
+    "refill_threshold": 10000000,
+    "refill_value": 20000000
+  },
+  "stars1x4zagpr2e6674j3z7ujytglu6cf2stsxwa53m9": {
+    "chain_id": "stargaze-1",
+    "denom": "ustars",
+    "refill_threshold": 21276595,
+    "refill_value": 42553190
+  },
+  "stride1x4zagpr2e6674j3z7ujytglu6cf2stsxe2rsyc": {
+    "chain_id": "stride-1",
+    "denom": "ustrd",
+    "refill_threshold": 285714,
+    "refill_value": 571428
+  },
+  "terra1x4zagpr2e6674j3z7ujytglu6cf2stsxu9evj5": {
+    "chain_id": "columbus-5",
+    "denom": "uluna",
+    "refill_threshold": 7692307692,
+    "refill_value": 15384615384
+  },
+  "umee1x4zagpr2e6674j3z7ujytglu6cf2stsxgh7n5x": {
+    "chain_id": "umee-1",
+    "denom": "uumee",
+    "refill_threshold": 181818181,
+    "refill_value": 363636362
+  }
+}
