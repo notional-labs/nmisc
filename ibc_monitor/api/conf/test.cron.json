@@ -1,0 +1,14 @@
+{
+  "noble1llw30uj8rtgcgqd4ufqd03zn6vt75fhsfhg5hk": {
+    "chain_id": "noble-1",
+    "denom": "uusdc",
+    "refill_threshold": 1000000,
+    "refill_value": 2000000
+  },
+  "migaloo1llw30uj8rtgcgqd4ufqd03zn6vt75fhsvq5x6k": {
+    "chain_id": "migaloo-1",
+    "denom": "uwhale",
+    "refill_threshold": 20000000,
+    "refill_value": 40000000
+  }
+}
