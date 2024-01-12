@@ -1,0 +1,38 @@
+{
+  "core14l786kuvng7wc4hgjzqnj5g9v87gx0x7h7r695": {
+    "chain_id": "coreum-mainnet-1",
+    "denom": "ucore",
+    "refill_threshold": 5000000,
+    "refill_value": 10000000
+  },
+  "cosmos14l786kuvng7wc4hgjzqnj5g9v87gx0x7ysmpz0": {
+    "chain_id": "cosmoshub-4",
+    "denom": "uatom",
+    "refill_threshold": 102040,
+    "refill_value": 204080
+  },
+  "osmo14l786kuvng7wc4hgjzqnj5g9v87gx0x7vtg35a": {
+    "chain_id": "osmosis-1",
+    "denom": "uosmo",
+    "refill_threshold": 555555,
+    "refill_value": 1111110
+  },
+  "sei14l786kuvng7wc4hgjzqnj5g9v87gx0x7fu2hyw": {
+    "chain_id": "pacific-1",
+    "denom": "usei",
+    "refill_threshold": 1428571,
+    "refill_value": 2857142
+  },
+  "axelar14l786kuvng7wc4hgjzqnj5g9v87gx0x7q7dffw": {
+    "chain_id": "axelar-dojo-1",
+    "denom": "uaxl",
+    "refill_threshold": 1000000,
+    "refill_value": 2000000
+  },
+  "terra14l786kuvng7wc4hgjzqnj5g9v87gx0x7z5ppq0": {
+    "chain_id": "phoenix-1",
+    "denom": "uluna",
+    "refill_threshold": 1428571,
+    "refill_value": 2857142
+  }
+}
