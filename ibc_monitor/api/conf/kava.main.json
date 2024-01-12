@@ -1,0 +1,50 @@
+{
+  "celestia13hp9az4f62du5trrmya8f224tjy9rxh35jsult": {
+    "chain_id": "celestia",
+    "denom": "utia",
+    "refill_threshold": 63291,
+    "refill_value": 126582
+  },
+  "cosmos13hp9az4f62du5trrmya8f224tjy9rxh39cpv9x": {
+    "chain_id": "cosmoshub-4",
+    "denom": "uatom",
+    "refill_threshold": 102040,
+    "refill_value": 204080
+  },
+  "dydx13hp9az4f62du5trrmya8f224tjy9rxh3vp0g93": {
+    "chain_id": "dydx-mainnet-1",
+    "denom": "adydx",
+    "refill_threshold": 400000,
+    "refill_value": 800000
+  },
+  "kava13hp9az4f62du5trrmya8f224tjy9rxh3ed43np": {
+    "chain_id": "kava_2222-10",
+    "denom": "ukava",
+    "refill_threshold": 1333333,
+    "refill_value": 2666666
+  },
+  "neutron13hp9az4f62du5trrmya8f224tjy9rxh3p8gwlp": {
+    "chain_id": "neutron-1",
+    "denom": "untrn",
+    "refill_threshold": 714285,
+    "refill_value": 1428570
+  },
+  "noble13hp9az4f62du5trrmya8f224tjy9rxh3dm5yag": {
+    "chain_id": "noble-1",
+    "denom": "uusdc",
+    "refill_threshold": 1000000,
+    "refill_value": 2000000
+  },
+  "osmo13hp9az4f62du5trrmya8f224tjy9rxh3drjun5": {
+    "chain_id": "osmosis-1",
+    "denom": "uosmo",
+    "refill_threshold": 555555,
+    "refill_value": 1111110
+  },
+  "terra13hp9az4f62du5trrmya8f224tjy9rxh3rumv8x": {
+    "chain_id": "phoenix-1",
+    "denom": "uluna",
+    "refill_threshold": 1428571,
+    "refill_value": 2857142
+  }
+}
