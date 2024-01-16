@@ -1,5 +1,5 @@
 pacman -Syu --noconfirm
-pacman -S --noconfirm go git base-devel wget jq screen glibc
+pacman -S --noconfirm go git base-devel wget jq screen
 
 ########################################################################################################################
 
