@@ -1,0 +1,20 @@
+source_chain: quicksilver-2
+source_lcd: http://lcd.quicksilver.zone
+chains:
+  cosmoshub-4: http://rpc.cosmoshub-4.quicksilver.zone:80
+  stargaze-1: http://rpc.stargaze-1.quicksilver.zone:80
+  regen-1: http://rpc.regen-1.quicksilver.zone:80
+  osmosis-1: http://rpc.osmosis-1.quicksilver.zone:80
+  juno-1: http://rpc.juno-1.quicksilver.zone:80
+  akashnet-2: http://rpc.akashnet-2.quicksilver.zone:80
+  evmos_9001-2: http://rpc.evmos-9001-2.quicksilver.zone:80
+  kichain-2: http://rpc.kichain-2.quicksilver.zone:80
+  injective-1: http://rpc.injective-1.quicksilver.zone:80
+  umee-1: http://rpc.umee-1.quicksilver.zone:80
+  kaiyo-1: http://rpc.kaiyo-1.quicksilver.zone:80
+  crescent-1: http://rpc.crescent-1.quicksilver.zone:80
+  mars-1: http://rpc.mars-1.quicksilver.zone:80
+  axelar-dojo-1: http://rpc.axelar-dojo-1.quicksilver.zone:80
+  phoenix-1: http://rpc.phoenix-1.quicksilver.zone:80
+  sommelier-3: http://rpc.sommelier-3.quicksilver.zone:80
+  centauri-1: http://rpc.centauri-1.quicksilver.zone:80
