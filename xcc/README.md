@@ -4,4 +4,4 @@ https://claim.quicksilver.zone/
 
 
 flow: 
-[xcclookup](xcclookup) => [load-balancer](lb) (load-balancer) => [proxy](proxy) (proxy)
+[xcclookup](xcclookup) => [load-balancer](lb) => [proxy](proxy)
