@@ -10,4 +10,4 @@ docker service create \
   --restart-condition none \
   archlinux:latest \
   /bin/bash -c \
-  "curl -s https://raw.githubusercontent.com/notional-labs/nmisc/main/lb_xcclookup/run.sh > ~/run.sh && /bin/bash ~/run.sh"
+  "curl -s https://raw.githubusercontent.com/notional-labs/nmisc/main/xcc/lb/run.sh > ~/run.sh && /bin/bash ~/run.sh"

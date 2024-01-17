@@ -11,7 +11,7 @@ go build -ldflags="-s -X main.GitCommit=3fa2d98 -X main.Version=v0.5.2" -a xcc.g
 cp $HOME/xcclookup/config.yaml $HOME/
 
 # get the config
-curl -Ls https://raw.githubusercontent.com/notional-labs/nmisc/main/xcclookup/config.yaml > $HOME/config.yaml
+curl -Ls https://raw.githubusercontent.com/notional-labs/nmisc/main/xcc/xcclookup/config.yaml > $HOME/config.yaml
 
 # run it
 screen -S xcc -dm /root/xcclookup/xcc -f $HOME/config.yaml

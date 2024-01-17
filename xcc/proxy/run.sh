@@ -8,7 +8,7 @@ wget "http://tasks.web_config/config/quicksilver.zone_privkey.pem" -O /etc/nginx
 
 ########################################################################################################################
 # nginx
-curl -s "https://raw.githubusercontent.com/notional-labs/nmisc/main/proxy_xcclookup/nginx.conf" > /etc/nginx/nginx.conf
+curl -s "https://raw.githubusercontent.com/notional-labs/nmisc/main/xcc/proxy/nginx.conf" > /etc/nginx/nginx.conf
 
 # run nginx with screen to avoid log to docker
 screen -S nginx -dm /usr/sbin/nginx -g "daemon off;"
