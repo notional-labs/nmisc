@@ -6,7 +6,6 @@ docker service create \
   --name xcclookup \
   --replicas 1 \
   --network net1 \
-  --constraint 'node.hostname==nmisc5' \
   --sysctl 'net.ipv4.tcp_tw_reuse=1' \
   --restart-condition none \
   archlinux:latest \
