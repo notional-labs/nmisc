@@ -4,8 +4,8 @@
     "axelar-dojo-1": "axelar",
     "bitcanna-1": "bitcanna",
     "canto_7700-1": {
-        "rpc": "https://rpc.canto.nodestake.top",
-        "api": "https://api.canto.nodestake.top"
+        "rpc": "https://canto-rpc.polkachu.com",
+        "api": "https://canto-api.polkachu.com"
     },
     "celestia": "celestia",
     "centauri-1": "composable",

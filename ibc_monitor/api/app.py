@@ -81,7 +81,7 @@ def get_ibc_status():
 
                         try:
                             url = "{}/ibc/core/channel/v1/channels/{}/ports/transfer/client_state".format(base_url, res_channel["channel_id"])
-                            rpc_request = requests.get(url)
+                            rpc_request = requests.get(url, timeout=(3, 6))
                             rpc_request_json = rpc_request.json()
 
                             res_channel["client_id"] = rpc_request_json["identified_client_state"]["client_id"]
@@ -96,7 +96,7 @@ def get_ibc_status():
 
                         try:
                             url = "{}/ibc/core/channel/v1/channels/{}/ports/transfer/packet_commitments".format(base_url, res_channel["channel_id"])
-                            rpc_request = requests.get(url)
+                            rpc_request = requests.get(url, timeout=(3, 6))
                             rpc_request_json = rpc_request.json()
                             pending_packets = int(rpc_request_json["pagination"]["total"])
                             res_channel["pending_packets"] = pending_packets
