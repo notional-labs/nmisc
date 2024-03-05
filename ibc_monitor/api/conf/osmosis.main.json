@@ -20,8 +20,8 @@
   "chihuahua1x4zagpr2e6674j3z7ujytglu6cf2stsxe5wz3k": {
     "chain_id": "chihuahua-1",
     "denom": "uhuahua",
-    "refill_threshold": 33333333333,
-    "refill_value": 66666666666
+    "refill_threshold": 6666666666,
+    "refill_value": 13333333332
   },
   "cosmos1x4zagpr2e6674j3z7ujytglu6cf2stsx6prvs5": {
     "chain_id": "cosmoshub-4",
