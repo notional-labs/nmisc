@@ -2,8 +2,8 @@
   "chihuahua1h56arsdxu8xnlvl2fc474ut7qp42439gm26y4t": {
     "chain_id": "chihuahua-1",
     "denom": "uhuahua",
-    "refill_threshold": 33333333333,
-    "refill_value": 66666666666
+    "refill_threshold": 6666666666,
+    "refill_value": 13333333332
   },
   "kava1h56arsdxu8xnlvl2fc474ut7qp42439gy2rhzw": {
     "chain_id": "kava_2222-10",
