@@ -9,7 +9,7 @@
     "chain_id": "furya-1",
     "denom": "ufury",
     "refill_threshold": 500000000,
-    "refill_value": 100000000
+    "refill_value": 1000000000
   },
   "juno195qlhxp0ztx0drlw6k3ng29n7skgt62r5ygnzl": {
     "chain_id": "juno-1",
