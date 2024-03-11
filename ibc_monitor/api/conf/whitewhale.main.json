@@ -2,8 +2,8 @@
   "axelar1y937dedxv5np0zlajk7l240slzzgmr2nslvsp3": {
     "chain_id": "axelar-dojo-1",
     "denom": "uaxl",
-    "refill_threshold": 500000,
-    "refill_value": 1000000
+    "refill_threshold": 250000,
+    "refill_value": 500000
   },
   "chihuahua1y937dedxv5np0zlajk7l240slzzgmr2nhyhktj": {
     "chain_id": "chihuahua-1",

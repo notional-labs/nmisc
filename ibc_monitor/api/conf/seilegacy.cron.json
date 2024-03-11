@@ -39,8 +39,8 @@
     "chain_id": "axelar-dojo-1",
     "denom": "uaxl",
     "need_refill": false,
-    "refill_threshold": 500000,
-    "refill_value": 1000000,
+    "refill_threshold": 250000,
+    "refill_value": 500000,
     "value": 942966
   },
   "terra1yaydzn04svz8980z40mqkh8v0vw3jw852jvkqv": {

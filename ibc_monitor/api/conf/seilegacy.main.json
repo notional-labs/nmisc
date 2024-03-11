@@ -2,8 +2,8 @@
   "axelar1nz5lu6upw0fh24tds9nrklxxastpajjrtgtsdt": {
     "chain_id": "axelar-dojo-1",
     "denom": "uaxl",
-    "refill_threshold": 500000,
-    "refill_value": 1000000
+    "refill_threshold": 250000,
+    "refill_value": 500000
   },
   "core1nz5lu6upw0fh24tds9nrklxxastpajjrug9rp3": {
     "chain_id": "coreum-mainnet-1",
