@@ -44,8 +44,8 @@
   "kava19pg4lxrv7x9e0c7p8n67vf8hemeqgpxxrfc0ps": {
     "chain_id": "kava_2222-10",
     "denom": "ukava",
-    "refill_threshold": 1333333,
-    "refill_value": 2666666
+    "refill_threshold": 666666,
+    "refill_value": 1333333
   },
   "kujira19pg4lxrv7x9e0c7p8n67vf8hemeqgpxxw5w26a": {
     "chain_id": "kaiyo-1",

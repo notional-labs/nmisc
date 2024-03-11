@@ -14,8 +14,8 @@
   "kava1y937dedxv5np0zlajk7l240slzzgmr2ngyw9uh": {
     "chain_id": "kava_2222-10",
     "denom": "ukava",
-    "refill_threshold": 1333333,
-    "refill_value": 2666666
+    "refill_threshold": 666666,
+    "refill_value": 1333333
   },
   "migaloo1y937dedxv5np0zlajk7l240slzzgmr2ne9nzl7": {
     "chain_id": "migaloo-1",

@@ -8,8 +8,8 @@
   "kava1h56arsdxu8xnlvl2fc474ut7qp42439gy2rhzw": {
     "chain_id": "kava_2222-10",
     "denom": "ukava",
-    "refill_threshold": 1333333,
-    "refill_value": 2666666
+    "refill_threshold": 666666,
+    "refill_value": 1333333
   },
   "umee1h56arsdxu8xnlvl2fc474ut7qp42439g2f24sm": {
     "chain_id": "umee-1",
