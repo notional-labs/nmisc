@@ -2,8 +2,8 @@
   "axelar19pg4lxrv7x9e0c7p8n67vf8hemeqgpxxmj66uk": {
     "chain_id": "axelar-dojo-1",
     "denom": "uaxl",
-    "refill_threshold": 1000000,
-    "refill_value": 2000000
+    "refill_threshold": 500000,
+    "refill_value": 1000000
   },
   "band19pg4lxrv7x9e0c7p8n67vf8hemeqgpxxxnvs0l": {
     "chain_id": "laozi-mainnet",

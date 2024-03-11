@@ -32,8 +32,8 @@
   "axelar1h56arsdxu8xnlvl2fc474ut7qp42439gu3pzlg": {
     "chain_id": "axelar-dojo-1",
     "denom": "uaxl",
-    "refill_threshold": 1000000,
-    "refill_value": 2000000
+    "refill_threshold": 500000,
+    "refill_value": 1000000
   },
   "migaloo1h56arsdxu8xnlvl2fc474ut7qp42439g4t7sp8": {
     "chain_id": "migaloo-1",
