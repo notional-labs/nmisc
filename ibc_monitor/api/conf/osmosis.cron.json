@@ -98,8 +98,8 @@
   "sent10lze5883qztyw4hw3hezathzhs5rt732dwak4d": {
     "chain_id": "sentinelhub-2",
     "denom": "udvpn",
-    "refill_threshold": 555555555,
-    "refill_value": 1111111110
+    "refill_threshold": 300000000,
+    "refill_value": 600000000
   },
   "stars10lze5883qztyw4hw3hezathzhs5rt732zfuj6n": {
     "chain_id": "stargaze-1",
