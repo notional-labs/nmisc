@@ -1,4 +1,10 @@
 {
+  "agoric1xq2nj4ey3uhspevu83rlhln5qw5pphsrcqd0zs": {
+    "chain_id": "agoric-3",
+    "denom": "ubld",
+    "refill_threshold": 6000000,
+    "refill_value": 12000000
+  },
   "canto1xq2nj4ey3uhspevu83rlhln5qw5pphsrctwqxw": {
     "chain_id": "canto_7700-1",
     "denom": "acanto",
