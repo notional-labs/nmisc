@@ -2,8 +2,8 @@
   "agoric1r2ltuct2snth7yz35sgdf6n734mzcpdsljuu2x": {
     "chain_id": "agoric-3",
     "denom": "ubld",
-    "refill_threshold": 6000000,
-    "refill_value": 12000000
+    "refill_threshold": 3000000,
+    "refill_value": 6000000
   },
   "canto1r2ltuct2snth7yz35sgdf6n734mzcpdslelnwc": {
     "chain_id": "canto_7700-1",
