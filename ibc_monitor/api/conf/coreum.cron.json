@@ -8,8 +8,8 @@
   "band19pg4lxrv7x9e0c7p8n67vf8hemeqgpxxxnvs0l": {
     "chain_id": "laozi-mainnet",
     "denom": "uband",
-    "refill_threshold": 625000,
-    "refill_value": 1250000
+    "refill_threshold": 312500,
+    "refill_value": 625000
   },
   "core19pg4lxrv7x9e0c7p8n67vf8hemeqgpxxvj5fsv": {
     "chain_id": "coreum-mainnet-1",
