@@ -2,8 +2,8 @@
   "akash1x4zagpr2e6674j3z7ujytglu6cf2stsxh6wtfw": {
     "chain_id": "akashnet-2",
     "denom": "uakt",
-    "refill_threshold": 344827,
-    "refill_value": 689654
+    "refill_threshold": 150000,
+    "refill_value": 300000
   },
   "axelar1x4zagpr2e6674j3z7ujytglu6cf2stsx704ym4": {
     "chain_id": "axelar-dojo-1",
