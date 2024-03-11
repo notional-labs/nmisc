@@ -116,8 +116,8 @@
   "terra10lze5883qztyw4hw3hezathzhs5rt732s330nz": {
     "chain_id": "columbus-5",
     "denom": "uluna",
-    "refill_threshold": 7692307692,
-    "refill_value": 15384615384
+    "refill_threshold": 3000000000,
+    "refill_value": 6000000000
   },
   "umee10lze5883qztyw4hw3hezathzhs5rt732yrks4s": {
     "chain_id": "umee-1",
