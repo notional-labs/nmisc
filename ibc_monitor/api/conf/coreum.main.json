@@ -68,7 +68,7 @@
   "secret17w8y9eujrz4m08nn0h349s5h2rs8uz5h2lwt88": {
     "chain_id": "secret-4",
     "denom": "uscrt",
-    "refill_threshold": 2500000,
-    "refill_value": 5000000
+    "refill_threshold": 1250000,
+    "refill_value": 2500000
   }
 }

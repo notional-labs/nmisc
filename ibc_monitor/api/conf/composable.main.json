@@ -62,8 +62,8 @@
   "secret1xq2nj4ey3uhspevu83rlhln5qw5pphsrgcme06": {
     "chain_id": "secret-4",
     "denom": "uscrt",
-    "refill_threshold": 2500000,
-    "refill_value": 5000000
+    "refill_threshold": 1250000,
+    "refill_value": 2500000
   },
   "stars1xq2nj4ey3uhspevu83rlhln5qw5pphsr7pcdeh": {
     "chain_id": "stargaze-1",
