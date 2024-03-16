@@ -1,6 +1,7 @@
 source_chain: quicksilver-2
 source_lcd: http://lcd.quicksilver.zone
 chains:
+  quicksilver-2: http://rpc.quicksilver.zone:80
   cosmoshub-4: http://rpc.cosmoshub-4.quicksilver.zone:80
   stargaze-1: http://rpc.stargaze-1.quicksilver.zone:80
   regen-1: http://rpc.regen-1.quicksilver.zone:80
