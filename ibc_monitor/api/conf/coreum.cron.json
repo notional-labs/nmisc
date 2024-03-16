@@ -14,8 +14,8 @@
   "core19pg4lxrv7x9e0c7p8n67vf8hemeqgpxxvj5fsv": {
     "chain_id": "coreum-mainnet-1",
     "denom": "ucore",
-    "refill_threshold": 5000000,
-    "refill_value": 10000000
+    "refill_threshold": 10000000,
+    "refill_value": 20000000
   },
   "cosmos19pg4lxrv7x9e0c7p8n67vf8hemeqgpxxluvjhh": {
     "chain_id": "cosmoshub-4",
