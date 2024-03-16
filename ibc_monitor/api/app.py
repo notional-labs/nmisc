@@ -7,6 +7,7 @@ import requests
 import timeago
 import toml
 import requests_cache
+import re
 from prometheus_client.parser import text_string_to_metric_families
 
 session = requests_cache.CachedSession('my_cache', backend='memory', expire_after=5, stale_if_error=True)
@@ -61,7 +62,11 @@ def get_ibc_status():
         # url = "https://raw.githubusercontent.com/notional-labs/cosmosia/main/relaying/coreum_config.toml"
         rpc_request = requests.get(hermes_config_url)
         body = rpc_request.text
-        parsed_toml = toml.loads(body)
+
+        # remove vars (start with $)
+        content = re.sub(r'^\$.*\n?', '', body, flags=re.MULTILINE)
+
+        parsed_toml = toml.loads(content)
         chains = parsed_toml["chains"]
 
         for chain in chains:
