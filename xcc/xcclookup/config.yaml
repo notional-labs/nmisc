@@ -19,3 +19,4 @@ chains:
   phoenix-1: http://rpc.phoenix-1.quicksilver.zone:80
   sommelier-3: http://rpc.sommelier-3.quicksilver.zone:80
   centauri-1: http://rpc.centauri-1.quicksilver.zone:80
+  dydx-mainnet-1: HTTP://rpc.dydx-mainnet-1.quicksilver.zone:80
