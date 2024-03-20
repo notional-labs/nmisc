@@ -7,7 +7,7 @@ cd $HOME
 gh_access_token="$(curl -s "http://tasks.web_config/config/gh_access_token")"
 git clone --single-branch --branch main "https://${gh_access_token}@github.com/ingenuity-build/xcclookup"
 cd xcclookup/
-go build -ldflags="-s -X main.GitCommit=3fa2d98 -X main.Version=v0.5.2" -a xcc.go
+go build -ldflags="-s -X main.GitCommit=3fa2d98 -X main.Version=v0.5.3" -a xcc.go
 cp $HOME/xcclookup/config.yaml $HOME/
 
 # get the config
