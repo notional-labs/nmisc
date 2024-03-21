@@ -62,8 +62,8 @@
   "nolus1x4zagpr2e6674j3z7ujytglu6cf2stsxv3nnj3": {
     "chain_id": "pirin-1",
     "denom": "unls",
-    "refill_threshold": 16666666,
-    "refill_value": 33333332
+    "refill_threshold": 8333333,
+    "refill_value": 16666666
   },
   "omniflix1x4zagpr2e6674j3z7ujytglu6cf2stsx8lj482": {
     "chain_id": "omniflixhub-1",

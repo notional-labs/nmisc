@@ -62,8 +62,8 @@
   "nolus10lze5883qztyw4hw3hezathzhs5rt732q9msn8": {
     "chain_id": "pirin-1",
     "denom": "unls",
-    "refill_threshold": 16666666,
-    "refill_value": 33333332
+    "refill_threshold": 8333333,
+    "refill_value": 16666666
   },
   "omniflix10lze5883qztyw4hw3hezathzhs5rt732tt6kxu": {
     "chain_id": "omniflixhub-1",
