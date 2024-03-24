@@ -12,17 +12,17 @@ for service_name in $SERVICES; do
   cat <<EOT >> $UPSTREAM_CONFIG_FILE
     upstream backend_rpc_$service_name {
         keepalive 16;
-        server r-${service_name}--${NOTIONAL_API_KEY}.gw.notionalapi.com:80;
+        server r-${service_name}--${NOTIONAL_API_KEY}.gw.notionalapi.net:80;
     }
 
     upstream backend_api_$service_name {
         keepalive 16;
-        server a-${service_name}--${NOTIONAL_API_KEY}.gw.notionalapi.com:80;
+        server a-${service_name}--${NOTIONAL_API_KEY}.gw.notionalapi.net:80;
     }
 
     upstream backend_grpc_$service_name {
         keepalive 16;
-        server g-${service_name}--${NOTIONAL_API_KEY}.gw.notionalapi.com:9090;
+        server g-${service_name}--${NOTIONAL_API_KEY}.gw.notionalapi.net:9090;
     }
 EOT
 
