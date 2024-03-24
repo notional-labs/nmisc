@@ -34,7 +34,7 @@ def get_block_time(chain_obj, block_num):
         url = "{}/block?height={}" \
             .format(chain_obj["rpc"], block_num)
     else:
-        url = "https://r-{}--{}.gw.notionalapi.com" \
+        url = "https://r-{}--{}.gw.notionalapi.net" \
               "/block?height={}".format(chain_obj, NOTIONAL_API_KEY, block_num)
 
     rpc_request = requests.get(url)
@@ -80,7 +80,7 @@ def get_ibc_status():
                         res_channel = {"chain_id": chain_id, "channel_id": channel[1], "client_id": "", "latest_height": "",
                                        "counter_chain_id": "", "block_time": "", "time_ago": "", "pending_packets": -1}
 
-                        base_url = "https://a-{}--{}.gw.notionalapi.com".format(chain_obj, NOTIONAL_API_KEY)
+                        base_url = "https://a-{}--{}.gw.notionalapi.net".format(chain_obj, NOTIONAL_API_KEY)
                         if type(chain_obj) == dict:
                             base_url = chain_obj["api"]
 

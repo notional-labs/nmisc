@@ -2,7 +2,7 @@
 
 Used to monitor the last client of date all channels defined in a hermes config.
 
-require to set `NOTIONAL_API_KEY` env var (https://notionalapi.com/).
+require to set `NOTIONAL_API_KEY` env var (https://notionalapi.net/).
 
 ## APIs
 
