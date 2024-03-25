@@ -1,0 +1,19 @@
+MnemonicPath = "/run/secrets/seed"
+RPCAddress = "https://rpc.quicksilver.zone:443"
+LCDAddress = "https://lcd.quicksilver.zone"
+ClaimEndpoint = "https://claim.quicksilver.zone"
+BatchSize = 10
+AccountPrefix = "quick"
+GasAdjustment = 1.1
+GasPrice = "0.01uqck"
+ChainID = "quicksilver-2"
+HTTPPort = 8090
+LogLevel = 1 
+
+[Database]
+  Host = "xcc-postgres"
+  Port = 5432
+  User = "pusher"
+  Name = "pusher"
+  Password = "DB_PASSWD"
+
