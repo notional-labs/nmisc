@@ -15,7 +15,15 @@ wget "http://tasks.web_config/config/NOTIONAL_API_KEY_RELAYING" -O $HOME/NOTIONA
 NOTIONAL_API_KEY=$(cat $HOME/NOTIONAL_API_KEY_RELAYING.txt)
 export NOTIONAL_API_KEY="$NOTIONAL_API_KEY"
 
-screen -S api -dm /usr/sbin/python app.py
+
+cat <<EOT > $HOME/start.sh
+while true; do
+  /usr/sbin/python app.py
+  sleep 5;
+done
+EOT
+
+screen -S api -dm /bin/bash $HOME/start.sh
 
 ########################################################################################################################
 echo "Done!"
