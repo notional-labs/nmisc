@@ -10,6 +10,8 @@ chains:
   - sommelier
   - juno
   - composable
+  - dydx
+  - saga
 apr_url: "https://chains.cosmos.directory"
 apr_cache_minutes: 15
 supply_cache_minutes: 180
