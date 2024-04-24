@@ -2,6 +2,7 @@
     "akashnet-2": "akash",
     "agoric-3": "agoric",
     "axelar-dojo-1": "axelar",
+    "banksy-testnet-5": "composable-testnet",
     "bitcanna-1": "bitcanna",
     "canto_7700-1": {
         "rpc": "https://canto-rpc.polkachu.com",
@@ -40,10 +41,8 @@
     "noble-1": "noble",
     "omniflixhub-1": "omniflixhub",
     "osmosis-1": "osmosis",
-    "pirin-1": {
-        "rpc": "https://pirin-cl.nolus.network:26657",
-        "api": "https://pirin-cl.nolus.network:1317"
-    },
+    "osmo-test-5": "osmosis-testnet",
+    "pirin-1": "nolus",
     "quasar-1": "quasar",
     "quicksilver-2": "quicksilver",
     "pacific-1": "sei",
