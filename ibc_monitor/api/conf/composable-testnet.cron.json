@@ -1,0 +1,14 @@
+{
+  "centauri192ct3dkrck233lv4aqxr7kqtuw7x5esnpyar46": {
+    "chain_id": "banksy-testnet-5",
+    "denom": "ppica",
+    "refill_threshold": 45454545,
+    "refill_value": 90909090
+  },
+  "osmo192ct3dkrck233lv4aqxr7kqtuw7x5esnd4r08m": {
+    "chain_id": "osmo-test-5",
+    "denom": "uosmo",
+    "refill_threshold": 555555,
+    "refill_value": 1111110
+  }
+}
