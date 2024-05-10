@@ -14,8 +14,8 @@
   "pica1xq2nj4ey3uhspevu83rlhln5qw5pphsr3pv4kp": {
     "chain_id": "centauri-1",
     "denom": "ppica",
-    "refill_threshold": 45454545,
-    "refill_value": 90909090
+    "refill_threshold": 45454545454545,
+    "refill_value": 90909090909090
   },
   "chihuahua1xq2nj4ey3uhspevu83rlhln5qw5pphsrfgz7ny": {
     "chain_id": "chihuahua-1",
