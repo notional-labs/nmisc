@@ -1,0 +1,83 @@
+BindPort = 2112
+MaxMsgsPerTx = 40
+AllowedQueries = []
+SkipEpoch = false
+
+[DefaultChain]
+  ChainID = "quicksilver-2"
+  RpcUrl = "https://rpc.quicksilver.zone:443"
+  ConnectTimeoutSeconds = 10
+  QueryTimeoutSeconds = 5
+  QueryRetries = 5
+  QueryRetryDelayMilliseconds = 400
+  MnemonicPath = "/var/secrets/seed"
+  Prefix = "quick"
+  TxSubmitTimeoutSeconds = 0
+  GasLimit = 150000000
+  GasPrice = "0.00025uqck"
+  GasMultiplier = 1.25
+
+[Chains]
+  [Chains.agoric-3]
+    ChainID = "agoric-3"
+    RpcUrl = "https://rpc.agoric-3.quicksilver.zone:443"
+    ConnectTimeoutSeconds = 10
+    QueryTimeoutSeconds = 5
+    QueryRetries = 5
+    QueryRetryDelayMilliseconds = 400
+  [Chains.cosmoshub-4]
+    ChainID = "cosmoshub-4"
+    RpcUrl = "https://rpc.cosmoshub-4.quicksilver.zone:443"
+    ConnectTimeoutSeconds = 10
+    QueryTimeoutSeconds = 5
+    QueryRetries = 5
+    QueryRetryDelayMilliseconds = 400
+  [Chains.dydx-mainnet-1]
+    ChainID = "dydx-mainnet-1"
+    RpcUrl = "https://rpc.dydx-mainnet-1.quicksilver.zone:443"
+    ConnectTimeoutSeconds = 10
+    QueryTimeoutSeconds = 5
+    QueryRetries = 5
+    QueryRetryDelayMilliseconds = 400
+  [Chains.juno-1]
+    ChainID = "juno-1"
+    RpcUrl = "https://rpc.juno-1.quicksilver.zone:443"
+    ConnectTimeoutSeconds = 10
+    QueryTimeoutSeconds = 5
+    QueryRetries = 5
+    QueryRetryDelayMilliseconds = 400
+  [Chains.osmosis-1]
+    ChainID = "osmosis-1"
+    RpcUrl = "https://rpc.osmosis-1.quicksilver.zone:443"
+    ConnectTimeoutSeconds = 10
+    QueryTimeoutSeconds = 5
+    QueryRetries = 5
+    QueryRetryDelayMilliseconds = 400
+  [Chains.regen-1]
+    ChainID = "regen-1"
+    RpcUrl = "https://rpc.regen-1.quicksilver.zone:443"
+    ConnectTimeoutSeconds = 10
+    QueryTimeoutSeconds = 5
+    QueryRetries = 5
+    QueryRetryDelayMilliseconds = 400
+  [Chains.sommelier-3]
+    ChainID = "sommelier-3"
+    RpcUrl = "https://rpc.sommelier-3.quicksilver.zone:443"
+    ConnectTimeoutSeconds = 10
+    QueryTimeoutSeconds = 5
+    QueryRetries = 5
+    QueryRetryDelayMilliseconds = 400
+  [Chains.ssc-1]
+    ChainID = "ssc-1"
+    RpcUrl = "https://rpc.ssc-1.quicksilver.zone:443"
+    ConnectTimeoutSeconds = 10
+    QueryTimeoutSeconds = 5
+    QueryRetries = 5
+    QueryRetryDelayMilliseconds = 400
+  [Chains.stargaze-1]
+    ChainID = "stargaze-1"
+    RpcUrl = "https://rpc.stargaze-1.quicksilver.zone:443"
+    ConnectTimeoutSeconds = 10
+    QueryTimeoutSeconds = 5
+    QueryRetries = 5
+    QueryRetryDelayMilliseconds = 400
