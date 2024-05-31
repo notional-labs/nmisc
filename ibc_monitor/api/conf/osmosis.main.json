@@ -2,14 +2,14 @@
   "akash1x4zagpr2e6674j3z7ujytglu6cf2stsxh6wtfw": {
     "chain_id": "akashnet-2",
     "denom": "uakt",
-    "refill_threshold": 150000,
-    "refill_value": 300000
+    "refill_threshold": 300000,
+    "refill_value": 600000
   },
   "axelar1x4zagpr2e6674j3z7ujytglu6cf2stsx704ym4": {
     "chain_id": "axelar-dojo-1",
     "denom": "uaxl",
-    "refill_threshold": 250000,
-    "refill_value": 500000
+    "refill_threshold": 500000,
+    "refill_value": 1000000
   },
   "bcna1x4zagpr2e6674j3z7ujytglu6cf2stsxq3ndcx": {
     "chain_id": "bitcanna-1",
@@ -74,8 +74,8 @@
   "osmo1x4zagpr2e6674j3z7ujytglu6cf2stsxj6suxx": {
     "chain_id": "osmosis-1",
     "denom": "uosmo",
-    "refill_threshold": 555555,
-    "refill_value": 1111110
+    "refill_threshold": 1111110,
+    "refill_value": 2222220
   },
   "quasar1x4zagpr2e6674j3z7ujytglu6cf2stsx5ze3a3": {
     "chain_id": "quasar-1",
