@@ -34,7 +34,8 @@ SkipEpoch = false
     QueryRetryDelayMilliseconds = 400
   [Chains.dydx-mainnet-1]
     ChainID = "dydx-mainnet-1"
-    RpcUrl = "https://rpc.dydx-mainnet-1.quicksilver.zone:443"
+    #RpcUrl = "https://rpc.dydx-mainnet-1.quicksilver.zone:443"
+    RpcUrl = "https://dydx-api.lavenderfive.com:443"
     ConnectTimeoutSeconds = 10
     QueryTimeoutSeconds = 5
     QueryRetries = 5
