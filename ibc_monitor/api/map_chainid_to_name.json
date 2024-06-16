@@ -37,6 +37,7 @@
     },
     "mars-1": "mars",
     "migaloo-1": "whitewhale",
+    "narwhal-2": "whitewhale-testnet",
     "neutron-1": "neutron",
     "noble-1": "noble",
     "omniflixhub-1": "omniflixhub",
@@ -55,5 +56,6 @@
         "api": "https://secretnetwork-api.lavenderfive.com"
     },
     "sentinelhub-2": "sentinel",
+    "theta-testnet-001": "cosmoshub-testnet2",
     "umee-1": "umee"
 }
