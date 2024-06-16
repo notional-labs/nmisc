@@ -1,0 +1,20 @@
+{
+  "migaloo15eatghghjcrdt20uu47yf693xqtqstszkn46xy": {
+    "chain_id": "narwhal-2",
+    "denom": "uwhale",
+    "refill_threshold": 5000000,
+    "refill_value": 10000000
+  },
+  "cosmos15eatghghjcrdt20uu47yf693xqtqstszm8uqn2": {
+    "chain_id": "theta-testnet-001",
+    "denom": "uatom",
+    "refill_threshold": 1500000,
+    "refill_value": 3000000
+  },
+  "osmo15eatghghjcrdt20uu47yf693xqtqstsznu0s9c": {
+    "chain_id": "osmo-test-5",
+    "denom": "uosmo",
+    "refill_threshold": 25000000,
+    "refill_value": 50000000
+  }
+}
