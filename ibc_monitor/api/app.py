@@ -77,6 +77,8 @@ def get_ibc_status():
                 if chain_obj is not None:
                     channels = chain["packet_filter"]["list"]
                     for channel in channels:
+                        port = channel[0]
+
                         res_channel = {"chain_id": chain_id, "channel_id": channel[1], "client_id": "", "latest_height": "",
                                        "counter_chain_id": "", "block_time": "", "time_ago": "", "pending_packets": -1}
 
@@ -85,7 +87,7 @@ def get_ibc_status():
                             base_url = chain_obj["api"]
 
                         try:
-                            url = "{}/ibc/core/channel/v1/channels/{}/ports/transfer/client_state".format(base_url, res_channel["channel_id"])
+                            url = "{}/ibc/core/channel/v1/channels/{}/ports/{}/client_state".format(base_url, res_channel["channel_id"], port)
                             rpc_request = requests.get(url, timeout=(3, 6))
                             rpc_request_json = rpc_request.json()
 
@@ -100,7 +102,7 @@ def get_ibc_status():
                             pass
 
                         try:
-                            url = "{}/ibc/core/channel/v1/channels/{}/ports/transfer/packet_commitments".format(base_url, res_channel["channel_id"])
+                            url = "{}/ibc/core/channel/v1/channels/{}/ports/{}/packet_commitments".format(base_url, res_channel["channel_id"], port)
                             rpc_request = requests.get(url, timeout=(3, 6))
                             rpc_request_json = rpc_request.json()
                             pending_packets = int(rpc_request_json["pagination"]["total"])
