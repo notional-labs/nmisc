@@ -35,6 +35,12 @@
     "refill_threshold": 5555550,
     "refill_value": 11111100
   },
+  "quicksilver1m7ec7nhyvrcmvgmx6rj8kfp66dk0z8mulyl6nx": {
+    "chain_id": "quicksilver-2",
+    "denom": "uqck",
+    "refill_threshold": 10000000,
+    "refill_value": 20000000
+  },
   "regen1j95wl27s43hqf476tq50sljt8knqcmlylretdv": {
     "chain_id": "regen-1",
     "denom": "uregen",
