@@ -44,8 +44,8 @@
   "saga1j95wl27s43hqf476tq50sljt8knqcmly7jt9uw": {
     "chain_id": "ssc-1",
     "denom": "usaga",
-    "refill_threshold": 6000000,
-    "refill_value": 12000000
+    "refill_threshold": 1000000,
+    "refill_value": 2000000
   },
   "somm1j95wl27s43hqf476tq50sljt8knqcmlyvaam2z": {
     "chain_id": "sommelier-3",
