@@ -50,8 +50,8 @@
   "somm1m7ec7nhyvrcmvgmx6rj8kfp66dk0z8muum2vlv": {
     "chain_id": "sommelier-3",
     "denom": "usomm",
-    "refill_threshold": 277000000,
-    "refill_value": 554000000
+    "refill_threshold": 100000000,
+    "refill_value": 200000000
   },
   "stars1m7ec7nhyvrcmvgmx6rj8kfp66dk0z8muymja9h": {
     "chain_id": "stargaze-3",
