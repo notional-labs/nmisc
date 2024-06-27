@@ -38,8 +38,8 @@
   "quick1m7ec7nhyvrcmvgmx6rj8kfp66dk0z8mumr4jh5": {
     "chain_id": "quicksilver-2",
     "denom": "uqck",
-    "refill_threshold": 10000000,
-    "refill_value": 20000000
+    "refill_threshold": 100000000,
+    "refill_value": 200000000
   },
   "regen1m7ec7nhyvrcmvgmx6rj8kfp66dk0z8mu09wucz": {
     "chain_id": "regen-1",
