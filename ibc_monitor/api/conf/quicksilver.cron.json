@@ -54,7 +54,7 @@
     "refill_value": 100000000
   },
   "stars1m7ec7nhyvrcmvgmx6rj8kfp66dk0z8muymja9h": {
-    "chain_id": "stargaze-3",
+    "chain_id": "stargaze-1",
     "denom": "ustars",
     "refill_threshold": 100000000,
     "refill_value": 200000000
