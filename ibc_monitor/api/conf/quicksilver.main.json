@@ -1,0 +1,62 @@
+{
+  "agoric1j95wl27s43hqf476tq50sljt8knqcmlyjusgt7": {
+    "chain_id": "agoric-3",
+    "denom": "ubld",
+    "refill_threshold": 30000000,
+    "refill_value": 60000000
+  },
+  "archway1j95wl27s43hqf476tq50sljt8knqcmly42wn3l": {
+    "chain_id": "archway-1",
+    "denom": "aarch",
+    "refill_threshold": 166000000000000,
+    "refill_value": 332000000000000
+  },
+  "cosmos1j95wl27s43hqf476tq50sljt8knqcmlyqpjhmg": {
+    "chain_id": "cosmoshub-4",
+    "denom": "uatom",
+    "refill_threshold": 1020400,
+    "refill_value": 2040800
+  },
+  "dydx1j95wl27s43hqf476tq50sljt8knqcmlyfcunml": {
+    "chain_id": "dydx-mainnet-1",
+    "denom": "adydx",
+    "refill_threshold": 1000000000000000000,
+    "refill_value": 2000000000000000000
+  },
+  "juno1j95wl27s43hqf476tq50sljt8knqcmlykn3vu5": {
+    "chain_id": "juno-1",
+    "denom": "ujuno",
+    "refill_threshold": 1666666,
+    "refill_value": 3333332
+  },
+  "osmo1j95wl27s43hqf476tq50sljt8knqcmlyg6p8d6": {
+    "chain_id": "osmosis-1",
+    "denom": "uosmo",
+    "refill_threshold": 5555550,
+    "refill_value": 11111100
+  },
+  "regen1j95wl27s43hqf476tq50sljt8knqcmlylretdv": {
+    "chain_id": "regen-1",
+    "denom": "uregen",
+    "refill_threshold": 100000000,
+    "refill_value": 200000000
+  },
+  "saga1j95wl27s43hqf476tq50sljt8knqcmly7jt9uw": {
+    "chain_id": "ssc-1",
+    "denom": "usaga",
+    "refill_threshold": 6000000,
+    "refill_value": 12000000
+  },
+  "somm1j95wl27s43hqf476tq50sljt8knqcmlyvaam2z": {
+    "chain_id": "sommelier-3",
+    "denom": "usomm",
+    "refill_threshold": 277000000,
+    "refill_value": 554000000
+  },
+  "stars1j95wl27s43hqf476tq50sljt8knqcmly5a92se": {
+    "chain_id": "stargaze-3",
+    "denom": "ustars",
+    "refill_threshold": 1000000000,
+    "refill_value": 2000000000
+  }
+}

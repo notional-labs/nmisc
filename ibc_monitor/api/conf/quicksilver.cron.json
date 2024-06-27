@@ -1,0 +1,62 @@
+{
+  "agoric1m7ec7nhyvrcmvgmx6rj8kfp66dk0z8muz68l7s": {
+    "chain_id": "agoric-3",
+    "denom": "ubld",
+    "refill_threshold": 30000000,
+    "refill_value": 60000000
+  },
+  "archway1m7ec7nhyvrcmvgmx6rj8kfp66dk0z8mu9veyy3": {
+    "chain_id": "archway-1",
+    "denom": "aarch",
+    "refill_threshold": 166000000000000,
+    "refill_value": 332000000000000
+  },
+  "cosmos1m7ec7nhyvrcmvgmx6rj8kfp66dk0z8mus89qwx": {
+    "chain_id": "cosmoshub-4",
+    "denom": "uatom",
+    "refill_threshold": 1020400,
+    "refill_value": 2040800
+  },
+  "dydx1m7ec7nhyvrcmvgmx6rj8kfp66dk0z8mue7tyw3": {
+    "chain_id": "dydx-mainnet-1",
+    "denom": "adydx",
+    "refill_threshold": 1000000000000000000,
+    "refill_value": 2000000000000000000
+  },
+  "juno1m7ec7nhyvrcmvgmx6rj8kfp66dk0z8mux4xmf6": {
+    "chain_id": "juno-1",
+    "denom": "ujuno",
+    "refill_threshold": 1666666,
+    "refill_value": 3333332
+  },
+  "osmo1m7ec7nhyvrcmvgmx6rj8kfp66dk0z8mucuksc5": {
+    "chain_id": "osmosis-1",
+    "denom": "uosmo",
+    "refill_threshold": 5555550,
+    "refill_value": 11111100
+  },
+  "regen1m7ec7nhyvrcmvgmx6rj8kfp66dk0z8mu09wucz": {
+    "chain_id": "regen-1",
+    "denom": "uregen",
+    "refill_threshold": 100000000,
+    "refill_value": 200000000
+  },
+  "saga1m7ec7nhyvrcmvgmx6rj8kfp66dk0z8muw5ujfq": {
+    "chain_id": "ssc-1",
+    "denom": "usaga",
+    "refill_threshold": 6000000,
+    "refill_value": 12000000
+  },
+  "somm1m7ec7nhyvrcmvgmx6rj8kfp66dk0z8muum2vlv": {
+    "chain_id": "sommelier-3",
+    "denom": "usomm",
+    "refill_threshold": 277000000,
+    "refill_value": 554000000
+  },
+  "stars1m7ec7nhyvrcmvgmx6rj8kfp66dk0z8muymja9h": {
+    "chain_id": "stargaze-3",
+    "denom": "ustars",
+    "refill_threshold": 1000000000,
+    "refill_value": 2000000000
+  }
+}
