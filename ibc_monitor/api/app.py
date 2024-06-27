@@ -80,7 +80,7 @@ def get_ibc_status():
                         port = channel[0]
 
                         res_channel = {"chain_id": chain_id, "channel_id": channel[1], "client_id": "", "latest_height": "",
-                                       "counter_chain_id": "", "block_time": "", "time_ago": "", "pending_packets": -1}
+                                       "counter_chain_id": "", "block_time": "", "time_ago": "", "seconds_ago": "", "pending_packets": -1}
 
                         base_url = "https://a-{}--{}.gw.notionalapi.net".format(chain_obj, NOTIONAL_API_KEY)
                         if type(chain_obj) == dict:
@@ -98,6 +98,8 @@ def get_ibc_status():
                             counter_chain_obj = map_chainid_to_name.get(res_channel["counter_chain_id"] )
                             res_channel["block_time"] = get_block_time(counter_chain_obj, res_channel["latest_height"])
                             res_channel["time_ago"] = timeago.format(parseDate(res_channel["block_time"]), datetime.datetime.utcnow())
+                            res_channel["seconds_ago"] = int((datetime.datetime.utcnow() - parseDate(res_channel["block_time"])).total_seconds())
+
                         except Exception:
                             pass
 
