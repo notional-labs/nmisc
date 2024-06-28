@@ -59,6 +59,12 @@
     "refill_threshold": 555555,
     "refill_value": 1111110
   },
+  "quick1r2ltuct2snth7yz35sgdf6n734mzcpdsxtw3rz": {
+    "chain_id": "quicksilver-2",
+    "denom": "uqck",
+    "refill_threshold": 10000000,
+    "refill_value": 20000000
+  },
   "secret1r2ltuct2snth7yz35sgdf6n734mzcpds02228v": {
     "chain_id": "secret-4",
     "denom": "uscrt",
