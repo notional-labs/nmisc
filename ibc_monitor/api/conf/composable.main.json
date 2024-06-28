@@ -8,8 +8,8 @@
   "canto18j6wg64kmnldqlc0lknmv39tgdjw9ch3fjhc0n": {
     "chain_id": "canto_7700-1",
     "denom": "acanto",
-    "refill_threshold": 2777777,
-    "refill_value": 5555554
+    "refill_threshold": 10000000000000000000,
+    "refill_value": 20000000000000000000
   },
   "pica1xq2nj4ey3uhspevu83rlhln5qw5pphsr3pv4kp": {
     "chain_id": "centauri-1",
