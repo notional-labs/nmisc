@@ -26,8 +26,8 @@
   "dydx17w8y9eujrz4m08nn0h349s5h2rs8uz5hpr5x6v": {
     "chain_id": "dydx-mainnet-1",
     "denom": "adydx",
-    "refill_threshold": 100000000000000000,
-    "refill_value": 200000000000000000
+    "refill_threshold": 1000000000000000000,
+    "refill_value": 2000000000000000000
   },
   "evmos1wm3dsf4ywdfrj7gce6c49sy82e587mmeaq62fg": {
     "chain_id": "evmos_9001-2",

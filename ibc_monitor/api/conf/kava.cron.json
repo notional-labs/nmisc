@@ -14,8 +14,8 @@
   "dydx1suvf23ytzcywn3awcthvt6g8s08a66q3uea295": {
     "chain_id": "dydx-mainnet-1",
     "denom": "adydx",
-    "refill_threshold": 100000000000000000,
-    "refill_value": 200000000000000000
+    "refill_threshold": 1000000000000000000,
+    "refill_value": 2000000000000000000
   },
   "kava1kn57ftr3mr0gc38p6srq3tnzstz76jrtwjlphn": {
     "chain_id": "kava_2222-10",
