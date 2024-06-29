@@ -79,7 +79,7 @@ def get_ibc_status():
                     for channel in channels:
                         port = channel[0]
 
-                        res_channel = {"chain_id": chain_id, "channel_id": channel[1], "client_id": "", "latest_height": "",
+                        res_channel = {"chain_id": chain_id, "channel_id": channel[1], "client_id": "", "port": port, "latest_height": "",
                                        "counter_chain_id": "", "block_time": "", "time_ago": "", "seconds_ago": "", "pending_packets": -1}
 
                         base_url = "https://a-{}--{}.gw.notionalapi.net".format(chain_obj, NOTIONAL_API_KEY)
