@@ -38,8 +38,8 @@
   "osmo13hp9az4f62du5trrmya8f224tjy9rxh3drjun5": {
     "chain_id": "osmosis-1",
     "denom": "uosmo",
-    "refill_threshold": 555555,
-    "refill_value": 1111110
+    "refill_threshold": 1000000,
+    "refill_value": 2000000
   },
   "terra13hp9az4f62du5trrmya8f224tjy9rxh3rumv8x": {
     "chain_id": "phoenix-1",
