@@ -20,8 +20,8 @@
   "kava1kn57ftr3mr0gc38p6srq3tnzstz76jrtwjlphn": {
     "chain_id": "kava_2222-10",
     "denom": "ukava",
-    "refill_threshold": 666666,
-    "refill_value": 1333333
+    "refill_threshold": 2000000,
+    "refill_value": 4000000
   },
   "neutron1suvf23ytzcywn3awcthvt6g8s08a66q33l6vly": {
     "chain_id": "neutron-1",
