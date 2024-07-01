@@ -36,6 +36,7 @@ make build
 
 echo "#################################################################################################################"
 echo "config..."
+mkdir -p $HOME/.icq-relayer
 curl -Ls "https://raw.githubusercontent.com/notional-labs/nmisc/58-update-icq-relayer-to-have-cronjob-to-restart/icq-relayer/config.toml" > $HOME/.icq-relayer/config.toml
 
 cat <<EOT > $HOME/start.sh
