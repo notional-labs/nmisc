@@ -5,15 +5,14 @@ loop_forever () {
 }
 
 
+echo "#################################################################################################################"
+echo "install..."
 
 pacman-key --init
 pacman -Syu --noconfirm
 pacman -Sy --noconfirm archlinux-keyring
 pacman -Sy --noconfirm git go base-devel pigz jq cronie screen
 pacman -Syu --noconfirm
-
-echo "#################################################################################################################"
-echo "install go..."
 
 export GOPATH="$HOME/go"
 export GOROOT="/usr/lib/go"
@@ -28,7 +27,7 @@ echo "build icq-relayer..."
 cd $HOME
 
 # branch or tag
-version="icq-v1.0.0-alpha"
+version="v1.5.6-hotfix.0"
 git_repo="https://github.com/quicksilver-zone/quicksilver"
 
 git clone --single-branch --branch $version $git_repo
