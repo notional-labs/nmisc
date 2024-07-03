@@ -1,6 +1,8 @@
 # ICQ Relayer HealthCheck
 
-Used for uptime monitoring or Dashboard
+Used for uptime monitoring or Dashboard.
+
+Porting code from `https://github.com/ingenuity-build/qsdelcheck/blob/main/check.py`
 
 ### APIs
 
