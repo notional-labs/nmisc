@@ -8,7 +8,7 @@ session = requests_cache.CachedSession('my_cache', backend='memory', expire_afte
 app = flask.Flask(__name__)
 
 NOTIONAL_API_KEY = os.environ["NOTIONAL_API_KEY"]
-
+CHAINS = ["cosmoshub-4", "juno-1", "osmosis-1", "regen-1", "sommelier-3", "stargaze-1"]
 
 @app.route('/get_icq_status', methods=['GET'])
 def get_icq_status():
@@ -32,6 +32,24 @@ def get_icq_status():
         print("Err", error)
 
     return "down", 500
+
+
+@app.route('/get_icq_metrics', methods=['GET'])
+def get_icq_metrics():
+    icq_historic_queues = {}
+
+    for chain_id in CHAINS:
+        try:
+            str_url = ("https://a-quicksilver--{}.gw.notionalapi.net/quicksilver/interchainquery/v1/queries/{}").format(NOTIONAL_API_KEY, chain_id)
+            icq_requests = requests.get(str_url)
+            resp = icq_requests.json()
+            val = resp['pagination']['total']
+            icq_historic_queue = int(val)
+            icq_historic_queues[chain_id] = icq_historic_queue
+        except Exception as error:
+            print("Err", error)
+
+    return icq_historic_queues, 200
 
 
 if __name__ == '__main__':
