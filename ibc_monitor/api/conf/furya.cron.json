@@ -2,8 +2,8 @@
   "cosmos1z2j85nckmyrhzwnwdek6s87yqkxrcnfumc36xt": {
     "chain_id": "cosmoshub-4",
     "denom": "uatom",
-    "refill_threshold": 102040,
-    "refill_value": 204080
+    "refill_threshold": 1020400,
+    "refill_value": 2040800
   },
   "furya1z2j85nckmyrhzwnwdek6s87yqkxrcnfu5d2vne": {
     "chain_id": "furya-1",

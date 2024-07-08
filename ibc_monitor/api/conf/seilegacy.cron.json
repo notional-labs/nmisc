@@ -2,54 +2,37 @@
   "core1yaydzn04svz8980z40mqkh8v0vw3jw85lcwd9h": {
     "chain_id": "coreum-mainnet-1",
     "denom": "ucore",
-    "message": "no refill configured",
-    "need_refill": false,
     "refill_threshold": 0,
-    "refill_value": 0,
-    "value": 5000000
+    "refill_value": 0
   },
   "cosmos1yaydzn04svz8980z40mqkh8v0vw3jw85vkkkzv": {
     "chain_id": "cosmoshub-4",
     "denom": "uatom",
-    "message": "no refill configured",
-    "need_refill": false,
-    "refill_threshold": 0,
-    "refill_value": 0,
-    "value": 84145
+    "refill_threshold": 1020400,
+    "refill_value": 2040800
   },
   "osmo1yaydzn04svz8980z40mqkh8v0vw3jw85yd9x57": {
     "chain_id": "osmosis-1",
     "denom": "uosmo",
-    "message": "no refill configured",
-    "need_refill": false,
     "refill_threshold": 0,
-    "refill_value": 0,
-    "value": 79566
+    "refill_value": 0
   },
   "sei1yaydzn04svz8980z40mqkh8v0vw3jw85p68qyd": {
     "chain_id": "pacific-1",
     "denom": "usei",
-    "message": "no refill configured",
-    "need_refill": false,
     "refill_threshold": 0,
-    "refill_value": 0,
-    "value": 369570
+    "refill_value": 0
   },
   "axelar1yaydzn04svz8980z40mqkh8v0vw3jw85gcq7fd": {
     "chain_id": "axelar-dojo-1",
     "denom": "uaxl",
-    "need_refill": false,
     "refill_threshold": 250000,
-    "refill_value": 500000,
-    "value": 942966
+    "refill_value": 500000
   },
   "terra1yaydzn04svz8980z40mqkh8v0vw3jw852jvkqv": {
     "chain_id": "phoenix-1",
     "denom": "uluna",
-    "message": "no refill configured",
-    "need_refill": false,
     "refill_threshold": 0,
-    "refill_value": 0,
-    "value": 1000000
+    "refill_value": 0
   }
 }

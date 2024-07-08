@@ -8,8 +8,8 @@
   "cosmos13hp9az4f62du5trrmya8f224tjy9rxh39cpv9x": {
     "chain_id": "cosmoshub-4",
     "denom": "uatom",
-    "refill_threshold": 102040,
-    "refill_value": 204080
+    "refill_threshold": 1020400,
+    "refill_value": 2040800
   },
   "dydx13hp9az4f62du5trrmya8f224tjy9rxh3vp0g93": {
     "chain_id": "dydx-mainnet-1",

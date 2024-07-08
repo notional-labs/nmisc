@@ -26,8 +26,8 @@
   "cosmos1xq2nj4ey3uhspevu83rlhln5qw5pphsr2a0sjx": {
     "chain_id": "cosmoshub-4",
     "denom": "uatom",
-    "refill_threshold": 102040,
-    "refill_value": 204080
+    "refill_threshold": 1020400,
+    "refill_value": 2040800
   },
   "cre1xq2nj4ey3uhspevu83rlhln5qw5pphsrw4u48t": {
     "chain_id": "crescent-1",

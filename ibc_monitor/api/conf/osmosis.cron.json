@@ -26,8 +26,8 @@
   "cosmos10lze5883qztyw4hw3hezathzhs5rt732k4t03z": {
     "chain_id": "cosmoshub-4",
     "denom": "uatom",
-    "refill_threshold": 102040,
-    "refill_value": 204080
+    "refill_threshold": 1020400,
+    "refill_value": 2040800
   },
   "cro10lze5883qztyw4hw3hezathzhs5rt732wwrkdn": {
     "chain_id": "crypto-org-chain-mainnet-1",

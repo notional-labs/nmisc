@@ -14,8 +14,8 @@
   "cosmos1v0x0naxens4rsw4g6ggl5cyarkwhn83xxhlgpl": {
     "chain_id": "cosmoshub-4",
     "denom": "uatom",
-    "refill_threshold": 102040,
-    "refill_value": 204080
+    "refill_threshold": 1020400,
+    "refill_value": 2040800
   },
   "osmo1v0x0naxens4rsw4g6ggl5cyarkwhn83xwvvchd": {
     "chain_id": "osmosis-1",
