@@ -11,28 +11,32 @@ echo "install..."
 pacman-key --init
 pacman -Syu --noconfirm
 pacman -Sy --noconfirm archlinux-keyring
-pacman -Sy --noconfirm git go base-devel pigz jq cronie screen
+pacman -Sy --noconfirm base-devel wget pigz jq cronie screen
 pacman -Syu --noconfirm
 
-export GOPATH="$HOME/go"
-export GOROOT="/usr/lib/go"
-export GOBIN="${GOPATH}/bin"
-export PATH="${PATH}:${GOROOT}/bin:${GOBIN}"
-export GOROOT_BOOTSTRAP=$GOROOT
-mkdir -p $GOBIN
+#export GOPATH="$HOME/go"
+#export GOROOT="/usr/lib/go"
+#export GOBIN="${GOPATH}/bin"
+#export PATH="${PATH}:${GOROOT}/bin:${GOBIN}"
+#export GOROOT_BOOTSTRAP=$GOROOT
+#mkdir -p $GOBIN
 
 echo "#################################################################################################################"
 echo "build icq-relayer..."
 
 cd $HOME
 
-# branch or tag
-version="v1.5.6-hotfix.0"
-git_repo="https://github.com/quicksilver-zone/quicksilver"
+## branch or tag
+#version="v1.5.6-hotfix.0"
+#git_repo="https://github.com/quicksilver-zone/quicksilver"
+#
+#git clone --single-branch --branch $version $git_repo
+#cd quicksilver/icq-relayer
+#make build
 
-git clone --single-branch --branch $version $git_repo
-cd quicksilver/icq-relayer
-make build
+# download instead
+wget -O - "https://github.com/notional-labs/nmisc/releases/download/untagged-9f3b002ff36bb86895f3/icq-relayer_v1.0.0-alpha.0.tar.gz" |pigz -dc |tar -xf -
+
 
 echo "#################################################################################################################"
 echo "config..."
@@ -41,7 +45,7 @@ curl -Ls "https://raw.githubusercontent.com/notional-labs/nmisc/58-update-icq-re
 
 cat <<EOT > $HOME/start.sh
 while true; do
-  $HOME/quicksilver/icq-relayer/icq-relayer start --home $HOME/.icq-relayer
+  $HOME/icq-relayer start --home $HOME/.icq-relayer
   sleep 5;
 done
 EOT
@@ -49,8 +53,9 @@ EOT
 cat <<EOT > $HOME/restart.sh
 while true; do
   killall icq-relayer
-  # 4 hours
-  sleep 14400;
+
+  # 1 hour
+  sleep 3600
 done
 EOT
 
