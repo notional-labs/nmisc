@@ -41,7 +41,7 @@ wget -O - "https://github.com/notional-labs/nmisc/releases/download/v0.1.0/icq-r
 echo "#################################################################################################################"
 echo "config..."
 mkdir -p $HOME/.icq-relayer
-curl -Ls "https://raw.githubusercontent.com/notional-labs/nmisc/58-update-icq-relayer-to-have-cronjob-to-restart/icq-relayer/config.toml" > $HOME/.icq-relayer/config.toml
+curl -Ls "https://raw.githubusercontent.com/notional-labs/nmisc/main/icq-relayer/config.toml" > $HOME/.icq-relayer/config.toml
 
 cat <<EOT > $HOME/start.sh
 while true; do

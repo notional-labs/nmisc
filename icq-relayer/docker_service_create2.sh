@@ -26,5 +26,5 @@ docker service create \
   $secret_opt \
   archlinux:latest \
   /bin/bash -c \
-  "curl -s https://raw.githubusercontent.com/notional-labs/nmisc/58-update-icq-relayer-to-have-cronjob-to-restart/icq-relayer/run.sh > ~/run.sh && \
+  "curl -s https://raw.githubusercontent.com/notional-labs/nmisc/main/icq-relayer/run.sh > ~/run.sh && \
   /bin/bash ~/run.sh"
