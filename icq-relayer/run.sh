@@ -11,7 +11,7 @@ echo "install..."
 pacman-key --init
 pacman -Syu --noconfirm
 pacman -Sy --noconfirm archlinux-keyring
-pacman -Sy --noconfirm base-devel wget pigz jq cronie screen
+pacman -Sy --noconfirm base-devel musl wget pigz jq cronie screen
 pacman -Syu --noconfirm
 
 #export GOPATH="$HOME/go"
