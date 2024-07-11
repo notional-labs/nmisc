@@ -1,13 +1,11 @@
 {
     "akashnet-2": "akash",
     "agoric-3": "agoric",
+    "archway-1": "archway",
     "axelar-dojo-1": "axelar",
     "banksy-testnet-5": "composable-testnet",
     "bitcanna-1": "bitcanna",
-    "canto_7700-1": {
-        "rpc": "https://canto-rpc.polkachu.com",
-        "api": "https://canto-api.polkachu.com"
-    },
+    "canto_7700-1": "canto",
     "celestia": "celestia",
     "centauri-1": "composable",
     "chihuahua-1": "chihuahua",
@@ -49,6 +47,8 @@
     "pacific-1": "sei",
     "phoenix-1": "terra2",
     "regen-1": "regen",
+    "ssc-1": "saga",
+    "sommelier-3": "sommelier",
     "stargaze-1": "stargaze",
     "stride-1": "stride",
     "secret-4": {
