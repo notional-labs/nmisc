@@ -56,8 +56,8 @@
   "osmo1xq2nj4ey3uhspevu83rlhln5qw5pphsrzxuqy5": {
     "chain_id": "osmosis-1",
     "denom": "uosmo",
-    "refill_threshold": 555555,
-    "refill_value": 1111110
+    "refill_threshold": 1111110,
+    "refill_value": 2222220
   },
   "quick1xq2nj4ey3uhspevu83rlhln5qw5pphsrpelzt5": {
     "chain_id": "quicksilver-2",
