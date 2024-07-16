@@ -53,7 +53,7 @@ EOT
 cat <<EOT > $HOME/restart.sh
 while true; do
   killall icq-relayer
-
+  killall dbus-daemon
   # 1 hour
   sleep 3600
 done
