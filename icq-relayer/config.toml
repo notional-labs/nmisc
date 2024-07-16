@@ -29,7 +29,7 @@ SkipEpoch = false
     ChainID = "cosmoshub-4"
     RpcUrl = "https://rpc.cosmoshub-4.quicksilver.zone:443"
     ConnectTimeoutSeconds = 10
-    QueryTimeoutSeconds = 5
+    QueryTimeoutSeconds = 10
     QueryRetries = 5
     QueryRetryDelayMilliseconds = 400
   [Chains.dydx-mainnet-1]
@@ -51,7 +51,7 @@ SkipEpoch = false
     ChainID = "osmosis-1"
     RpcUrl = "https://rpc.osmosis-1.quicksilver.zone:443"
     ConnectTimeoutSeconds = 10
-    QueryTimeoutSeconds = 5
+    QueryTimeoutSeconds = 10
     QueryRetries = 5
     QueryRetryDelayMilliseconds = 400
   [Chains.regen-1]
