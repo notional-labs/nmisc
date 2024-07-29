@@ -8,8 +8,8 @@
   "archway1j95wl27s43hqf476tq50sljt8knqcmly42wn3l": {
     "chain_id": "archway-1",
     "denom": "aarch",
-    "refill_threshold": 166000000000000000,
-    "refill_value": 332000000000000000
+    "refill_threshold": 1660000000000000000,
+    "refill_value": 3320000000000000000
   },
   "cosmos1j95wl27s43hqf476tq50sljt8knqcmlyqpjhmg": {
     "chain_id": "cosmoshub-4",

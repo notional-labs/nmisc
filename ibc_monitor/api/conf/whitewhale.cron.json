@@ -44,7 +44,7 @@
   "archway1h56arsdxu8xnlvl2fc474ut7qp42439gd5tw77": {
     "chain_id": "archway-1",
     "denom": "aarch",
-    "refill_threshold": 166000000000000000,
-    "refill_value": 332000000000000000
+    "refill_threshold": 1660000000000000000,
+    "refill_value": 3320000000000000000
   }
 }

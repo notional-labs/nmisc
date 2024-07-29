@@ -8,8 +8,8 @@
   "archway1m7ec7nhyvrcmvgmx6rj8kfp66dk0z8mu9veyy3": {
     "chain_id": "archway-1",
     "denom": "aarch",
-    "refill_threshold": 166000000000000000,
-    "refill_value": 332000000000000000
+    "refill_threshold": 1660000000000000000,
+    "refill_value": 3320000000000000000
   },
   "cosmos1m7ec7nhyvrcmvgmx6rj8kfp66dk0z8mus89qwx": {
     "chain_id": "cosmoshub-4",
