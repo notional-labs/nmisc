@@ -13,6 +13,9 @@ cd $HOME/nmisc/_sys/web_config
 # add --break-system-packages to fix error: externally-managed-environment
 pip install -r requirements.txt --break-system-packages
 
+# fix ModuleNotFoundError: No module named 'distutils'
+pip install setuptools --break-system-packages
+
 screen -S web_config -dm /usr/sbin/python app.py
 
 sleep 3
