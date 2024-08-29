@@ -1,5 +1,8 @@
+pacman-key --init
 pacman -Syu --noconfirm
+pacman -Sy --noconfirm archlinux-keyring
 pacman -S --noconfirm go git base-devel wget jq screen
+pacman -Syu --noconfirm
 
 ########################################################################################################################
 # build
