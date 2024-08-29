@@ -1,5 +1,8 @@
+pacman-key --init
 pacman -Syu --noconfirm
+pacman -Sy --noconfirm archlinux-keyring
 pacman -S --noconfirm git base-devel python python-pip nginx screen
+pacman -Syu --noconfirm
 
 ################################################################################
 # web_config
