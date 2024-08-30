@@ -16,7 +16,7 @@ docker service create \
   --constraint 'node.role==manager' \
   --endpoint-mode dnsrr \
   --mount type=bind,source=/var/run/docker.sock,destination=/var/run/docker.sock \
-  --restart-condition none \
+  --restart-condition any \
   archlinux:latest \
   /bin/bash -c \
   "curl -s https://raw.githubusercontent.com/notional-labs/nmisc/main/_sys/web_config/run.sh > ~/run.sh && /bin/bash ~/run.sh"
