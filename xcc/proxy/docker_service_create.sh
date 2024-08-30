@@ -10,7 +10,7 @@ docker service create \
   --network net1 \
   --constraint 'node.hostname==nmisc5' \
   --sysctl 'net.ipv4.tcp_tw_reuse=1' \
-  --restart-condition none \
+  --restart-condition any \
   archlinux:latest \
   /bin/bash -c \
   "curl -s https://raw.githubusercontent.com/notional-labs/nmisc/main/xcc/proxy/run.sh > ~/run.sh && /bin/bash ~/run.sh"
